@@ -1,0 +1,114 @@
+
+Log written at : 1/5/2016 11:34:35 AM
+Error occured on page : http://localhost:56141/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/default.aspx?
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/5/2016 3:40:18 PM
+Error occured on page : http://localhost:56141/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/default.aspx?
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/5/2016 4:19:39 PM
+Error occured on page : http://localhost:56141/HRMSNet_V2/admin/TAConfig.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at DatabaseManager.Data.DBAccessManager.AddUpdateTAConfig(Int32 RequestorID, Int32 DivisionID, Int32 LocationID, Boolean EmpEditAccess, Boolean EmpDeleteAccess, Boolean SupEditAccess, Boolean LunchAllowed, Boolean OTAllowed, Int32 MaxOTMins)
+   at SchoolNet.TAConfig.TAConfig_Save_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\TAConfig.aspx.cs:line 102
+==========================================
+
+Log written at : 1/5/2016 4:25:49 PM
+Error occured on page : http://localhost:56141/HRMSNet_V2/admin/TAConfig.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at DatabaseManager.Data.DBAccessManager.AddUpdateTAConfig(Int32 RequestorID, Int32 DivisionID, Int32 LocationID, Boolean EmpEditAccess, Boolean EmpDeleteAccess, Boolean SupEditAccess, Boolean LunchAllowed, Boolean OTAllowed, Int32 MaxOTMins)
+   at SchoolNet.TAConfig.TAConfig_Save_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\TAConfig.aspx.cs:line 102
+==========================================
+
+Log written at : 1/5/2016 4:25:50 PM
+Error occured on page : http://localhost:56141/HRMSNet_V2/admin/TAConfig.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at DatabaseManager.Data.DBAccessManager.AddUpdateTAConfig(Int32 RequestorID, Int32 DivisionID, Int32 LocationID, Boolean EmpEditAccess, Boolean EmpDeleteAccess, Boolean SupEditAccess, Boolean LunchAllowed, Boolean OTAllowed, Int32 MaxOTMins)
+   at SchoolNet.TAConfig.TAConfig_Save_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\TAConfig.aspx.cs:line 102
+==========================================
+
+Log written at : 1/5/2016 4:26:06 PM
+Error occured on page : http://localhost:56141/HRMSNet_V2/admin/TAConfig.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at DatabaseManager.Data.DBAccessManager.AddUpdateTAConfig(Int32 RequestorID, Int32 DivisionID, Int32 LocationID, Boolean EmpEditAccess, Boolean EmpDeleteAccess, Boolean SupEditAccess, Boolean LunchAllowed, Boolean OTAllowed, Int32 MaxOTMins)
+   at SchoolNet.TAConfig.TAConfig_Save_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\TAConfig.aspx.cs:line 102
+==========================================
+
+Log written at : 1/5/2016 4:26:41 PM
+Error occured on page : http://localhost:56141/HRMSNet_V2/admin/TAConfig.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at DatabaseManager.Data.DBAccessManager.AddUpdateTAConfig(Int32 RequestorID, Int32 DivisionID, Int32 LocationID, Boolean EmpEditAccess, Boolean EmpDeleteAccess, Boolean SupEditAccess, Boolean LunchAllowed, Boolean OTAllowed, Int32 MaxOTMins)
+   at SchoolNet.TAConfig.TAConfig_Save_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\TAConfig.aspx.cs:line 102
+==========================================
+
+Log written at : 1/5/2016 4:28:52 PM
+Error occured on page : http://localhost:56141/HRMSNet_V2/admin/TAConfig.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at DatabaseManager.Data.DBAccessManager.AddUpdateTAConfig(Int32 RequestorID, Int32 DivisionID, Int32 LocationID, Boolean EmpEditAccess, Boolean EmpDeleteAccess, Boolean SupEditAccess, Boolean LunchAllowed, Boolean OTAllowed, Int32 MaxOTMins)
+   at SchoolNet.TAConfig.TAConfig_Save_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\TAConfig.aspx.cs:line 102
+==========================================
+
+Log written at : 1/5/2016 4:30:30 PM
+Error occured on page : http://localhost:56141/HRMSNet_V2/admin/TAConfig.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at DatabaseManager.Data.DBAccessManager.AddUpdateTAConfig(Int32 RequestorID, Int32 DivisionID, Int32 LocationID, Boolean EmpEditAccess, Boolean EmpDeleteAccess, Boolean SupEditAccess, Boolean LunchAllowed, Boolean OTAllowed, Int32 MaxOTMins)
+   at SchoolNet.TAConfig.TAConfig_Save_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\TAConfig.aspx.cs:line 102
+==========================================
+
+Log written at : 1/5/2016 4:32:39 PM
+Error occured on page : http://localhost:56141/HRMSNet_V2/admin/TAConfig.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at DatabaseManager.Data.DBAccessManager.AddUpdateTAConfig(Int32 RequestorID, Int32 DivisionID, Int32 LocationID, Boolean EmpEditAccess, Boolean EmpDeleteAccess, Boolean SupEditAccess, Boolean LunchAllowed, Boolean OTAllowed, Int32 MaxOTMins)
+   at SchoolNet.TAConfig.TAConfig_Save_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\TAConfig.aspx.cs:line 102
+==========================================
+
+Log written at : 1/5/2016 6:23:56 PM
+Error occured on page : http://localhost:56141/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/Admin/Division.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================

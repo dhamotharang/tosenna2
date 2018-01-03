@@ -1,0 +1,42 @@
+
+Log written at : 7/9/2015 12:39:27 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx?ReturnUrl=/HRMSNet_Dev/default.aspx?
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/9/2015 1:11:50 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/9/2015 1:38:11 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================

@@ -1,0 +1,120 @@
+
+Log written at : 1/23/2016 3:38:50 PM
+Error occured on page : http://localhost:8210/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/23/2016 4:12:31 PM
+Error occured on page : http://localhost:8210/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/23/2016 5:29:37 PM
+Error occured on page : http://localhost:4116/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/admin/dashboard.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.RedirectBasedonRole() in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 322
+==========================================
+
+Log written at : 1/23/2016 5:34:37 PM
+Error occured on page : http://localhost:4116/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/default.aspx?
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/23/2016 6:00:34 PM
+Error occured on page : http://localhost:4116/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/admin/dashboard.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.RedirectBasedonRole() in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 322
+==========================================
+
+Log written at : 1/23/2016 6:25:31 PM
+Error occured on page : http://localhost:4116/HRMSNet_V2/Supervisor/PendingLeaveRequests.aspx
+
+Here is the actual error :
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: The remote name could not be resolved: 'smtpout21.emea.aon.bz'
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SchoolNet.PendingLeaveRequests.LeaveRequestApproval_Notification(String EmpName, String EmpEmail, String LeaveStartDate, String LeaveEndDate, String LeaveType, String StatusName, String LineManagerName, String LineManagerEmail) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Supervisor\PendingLeaveRequests.aspx.cs:line 187
+==========================================
+
+Log written at : 1/23/2016 6:25:43 PM
+Error occured on page : http://localhost:4116/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/23/2016 6:27:18 PM
+Error occured on page : http://localhost:4116/HRMSNet_V2/Common/LeaveRequest.aspx
+
+Here is the actual error :
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: The remote name could not be resolved: 'smtpout21.emea.aon.bz'
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SchoolNet.LeaveRequest.NotifyApproversViaEmail(String EmpName, String EmpEmail, String LeaveStartDate, String LeaveEndDate, String LeaveType, String LineManagerName, String LineManagerEmail, String DeptHeadName, String DeptHeadEmail, String HRAdminName, String HRAdminEmail) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\LeaveRequest.aspx.cs:line 204
+==========================================

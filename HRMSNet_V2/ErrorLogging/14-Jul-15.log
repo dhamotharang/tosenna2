@@ -1,0 +1,38 @@
+
+Log written at : 7/14/2015 12:05:28 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx?ReturnUrl=/HRMSNet_Dev/default.aspx?
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/14/2015 1:57:48 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/Division.aspx
+
+Here is the actual error :
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SchoolNet.Division.DGrid_EditCommand(Object source, DataGridCommandEventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\Division.aspx.cs:line 552
+==========================================
+
+Log written at : 7/14/2015 1:58:09 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/Division.aspx
+
+Here is the actual error :
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SchoolNet.Division.DGrid_EditCommand(Object source, DataGridCommandEventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\Division.aspx.cs:line 552
+==========================================
+
+Log written at : 7/14/2015 1:58:20 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/Division.aspx
+
+Here is the actual error :
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SchoolNet.Division.DGrid_EditCommand(Object source, DataGridCommandEventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\Division.aspx.cs:line 552
+==========================================

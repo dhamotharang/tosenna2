@@ -1,0 +1,428 @@
+
+Log written at : 7/13/2015 12:34:08 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx?ReturnUrl=/HRMSNet_Dev/default.aspx?
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/13/2015 12:37:40 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'EContactID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1500
+==========================================
+
+Log written at : 7/13/2015 12:44:53 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1469
+==========================================
+
+Log written at : 7/13/2015 12:46:52 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1469
+==========================================
+
+Log written at : 7/13/2015 12:47:56 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1469
+==========================================
+
+Log written at : 7/13/2015 12:53:02 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1469
+==========================================
+
+Log written at : 7/13/2015 1:03:00 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1469
+==========================================
+
+Log written at : 7/13/2015 1:19:20 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'dependentID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1475
+==========================================
+
+Log written at : 7/13/2015 1:40:48 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'dependentID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1475
+==========================================
+
+Log written at : 7/13/2015 1:52:33 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'dependentID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1475
+==========================================
+
+Log written at : 7/13/2015 2:15:21 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ReactivateEmployee.aspx
+
+Here is the actual error :
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: The remote name could not be resolved: 'smtpout21.emea.aon.bz'
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SchoolNet.ReactivateEmployee.EmployeePasswordResetNotification(String employeeName, String uName, String Password) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ReactivateEmployee.aspx.cs:line 154
+==========================================
+
+Log written at : 7/13/2015 2:16:03 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.ArgumentOutOfRangeException: 'Tab5_EmpStatusDDList' has a SelectedValue which is invalid because it does not exist in the list of items.
+Parameter name: value
+   at System.Web.UI.WebControls.ListControl.set_SelectedValue(String value)
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1323
+==========================================
+
+Log written at : 7/13/2015 2:16:31 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ReactivateEmployee.aspx
+
+Here is the actual error :
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: The remote name could not be resolved: 'smtpout21.emea.aon.bz'
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SchoolNet.ReactivateEmployee.EmployeePasswordResetNotification(String employeeName, String uName, String Password) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ReactivateEmployee.aspx.cs:line 154
+==========================================
+
+Log written at : 7/13/2015 3:43:51 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx?ReturnUrl=/HRMSNet_Dev/admin/ReactivateEmployee.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/13/2015 4:00:08 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'EContactID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1500
+==========================================
+
+Log written at : 7/13/2015 4:42:41 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/13/2015 4:43:03 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/Common/LeaveRequest.aspx
+
+Here is the actual error :
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: The remote name could not be resolved: 'smtpout21.emea.aon.bz'
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SchoolNet.LeaveRequest.NotifyApproversViaEmail(String EmpName, String EmpEmail, String LeaveStartDate, String LeaveEndDate, String LeaveType, String LineManagerName, String LineManagerEmail, String DeptHeadName, String DeptHeadEmail, String HRAdminName, String HRAdminEmail) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Common\LeaveRequest.aspx.cs:line 204
+==========================================
+
+Log written at : 7/13/2015 4:43:27 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx?ReturnUrl=/HRMSNet_Dev/admin/LeaveList.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.RedirectBasedonRole() in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 322
+==========================================
+
+Log written at : 7/13/2015 4:43:51 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/13/2015 4:58:58 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx?ReturnUrl=/HRMSNet_Dev/admin/LeaveList.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/13/2015 4:59:26 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/Common/LeaveRequest.aspx
+
+Here is the actual error :
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: The remote name could not be resolved: 'smtpout21.emea.aon.bz'
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SchoolNet.LeaveRequest.NotifyApproversViaEmail(String EmpName, String EmpEmail, String LeaveStartDate, String LeaveEndDate, String LeaveType, String LineManagerName, String LineManagerEmail, String DeptHeadName, String DeptHeadEmail, String HRAdminName, String HRAdminEmail) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Common\LeaveRequest.aspx.cs:line 204
+==========================================
+
+Log written at : 7/13/2015 5:32:32 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'dependentID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1475
+==========================================
+
+Log written at : 7/13/2015 5:54:24 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageLeave.aspx
+
+Here is the actual error :
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: The remote name could not be resolved: 'smtpout21.emea.aon.bz'
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SchoolNet.ManageLeave.LeaveRequestCancel_Notification(String EmpName, String EmpEmail, String LeaveStartDate, String LeaveEndDate, String LeaveType, String StatusName) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageLeave.aspx.cs:line 390
+==========================================
+
+Log written at : 7/13/2015 6:06:50 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx?ReturnUrl=/HRMSNet_Dev/Common/LeaveRequest.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/13/2015 6:08:01 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/Common/LeaveRequest.aspx
+
+Here is the actual error :
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: The remote name could not be resolved: 'smtpout21.emea.aon.bz'
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SchoolNet.LeaveRequest.NotifyApproversViaEmail(String EmpName, String EmpEmail, String LeaveStartDate, String LeaveEndDate, String LeaveType, String LineManagerName, String LineManagerEmail, String DeptHeadName, String DeptHeadEmail, String HRAdminName, String HRAdminEmail) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Common\LeaveRequest.aspx.cs:line 204
+==========================================
+
+Log written at : 7/13/2015 6:21:03 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageLeave.aspx
+
+Here is the actual error :
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: The remote name could not be resolved: 'smtpout21.emea.aon.bz'
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SchoolNet.ManageLeave.LeaveRequestApproval_Notification(String EmpName, String EmpEmail, String LeaveStartDate, String LeaveEndDate, String LeaveType, String StatusName, String LineManagerName, String LineManagerEmail) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageLeave.aspx.cs:line 443
+==========================================
+
+Log written at : 7/13/2015 6:45:33 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/Clerical/ManageGeneralTrans.aspx
+
+Here is the actual error :
+System.InvalidOperationException: The 'Microsoft.ACE.OLEDB.12.0' provider is not registered on the local machine.
+   at System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at SchoolNet.ManageGeneralTrans.Import_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Clerical\ManageGeneralTrans.aspx.cs:line 316
+==========================================
+
+Log written at : 7/13/2015 6:46:23 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/Clerical/ManageGeneralTrans.aspx
+
+Here is the actual error :
+System.InvalidOperationException: The 'Microsoft.ACE.OLEDB.12.0' provider is not registered on the local machine.
+   at System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at SchoolNet.ManageGeneralTrans.Import_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Clerical\ManageGeneralTrans.aspx.cs:line 316
+==========================================
+
+Log written at : 7/13/2015 6:46:37 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/Clerical/ManageGeneralTrans.aspx
+
+Here is the actual error :
+System.InvalidOperationException: The 'Microsoft.ACE.OLEDB.12.0' provider is not registered on the local machine.
+   at System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at SchoolNet.ManageGeneralTrans.Import_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Clerical\ManageGeneralTrans.aspx.cs:line 316
+==========================================
+
+Log written at : 7/13/2015 6:54:05 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/Clerical/ManageGeneralTrans.aspx
+
+Here is the actual error :
+System.InvalidOperationException: The 'Microsoft.ACE.OLEDB.12.0' provider is not registered on the local machine.
+   at System.Data.OleDb.OleDbServicesWrapper.GetDataSource(OleDbConnectionString constr, DataSourceWrapper& datasrcWrapper)
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at SchoolNet.ManageGeneralTrans.Import_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Clerical\ManageGeneralTrans.aspx.cs:line 316
+==========================================

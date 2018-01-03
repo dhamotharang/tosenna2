@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="DatabaseManager">
+</Property><Property Name="Solution File" Value="C:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\DatabaseManager.Data\DatabaseManager.sln">
+</Property><Property Name="User Options File" Value="C:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\DatabaseManager.Data\DatabaseManager.suo">
+</Property><Property Name="Date" Value="Tuesday, July 21, 2015">
+</Property><Property Name="Time" Value="12:46 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="DatabaseManager.sln" Description="File successfully backed up as C:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\DatabaseManager.Data\Backup\DatabaseManager.sln">
+</Event><Event ErrorLevel="0" Project="" Source="DatabaseManager.suo" Description="File successfully backed up as C:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\DatabaseManager.Data\Backup\DatabaseManager.suo">
+</Event><Event ErrorLevel="0" Project="DatabaseManager.Data" Source="DatabaseManager.Data.csproj" Description="Project file successfully backed up as C:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\DatabaseManager.Data\Backup\DatabaseManager.Data.csproj">
+</Event><Event ErrorLevel="0" Project="DatabaseManager.Data" Source="DatabaseManager.Data.csproj.user" Description="Project user file successfully backed up as C:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\DatabaseManager.Data\Backup\DatabaseManager.Data.csproj.user">
+</Event><Event ErrorLevel="0" Project="DatabaseManager.Data" Source="AssemblyInfo.cs" Description="File successfully backed up as C:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\DatabaseManager.Data\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="DatabaseManager.Data" Source="BaseDataAccessor.cs" Description="File successfully backed up as C:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\DatabaseManager.Data\Backup\BaseDataAccessor.cs">
+</Event><Event ErrorLevel="0" Project="DatabaseManager.Data" Source="Configuration.cs" Description="File successfully backed up as C:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\DatabaseManager.Data\Backup\Configuration.cs">
+</Event><Event ErrorLevel="0" Project="DatabaseManager.Data" Source="DBAccessManager.cs" Description="File successfully backed up as C:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\DatabaseManager.Data\Backup\DBAccessManager.cs">
+</Event><Event ErrorLevel="0" Project="DatabaseManager.Data" Source="LogDataAccessor.cs" Description="File successfully backed up as C:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\DatabaseManager.Data\Backup\LogDataAccessor.cs">
+</Event><Event ErrorLevel="0" Project="DatabaseManager.Data" Source="SecurityDataAccessor.cs" Description="File successfully backed up as C:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\DatabaseManager.Data\Backup\SecurityDataAccessor.cs">
+</Event><Event ErrorLevel="0" Project="DatabaseManager.Data" Source="ValidateDataAccessor.cs" Description="File successfully backed up as C:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\DatabaseManager.Data\Backup\ValidateDataAccessor.cs">
+</Event><Event ErrorLevel="1" Project="DatabaseManager.Data" Source="DatabaseManager.Data.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="DatabaseManager.Data" Source="DatabaseManager.Data.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="DatabaseManager.Data" Source="DatabaseManager.Data.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DatabaseManager.Data" Source="DatabaseManager.Data.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="" Source="DatabaseManager.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="DatabaseManager.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DatabaseManager.Data" Source="DatabaseManager.Data.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

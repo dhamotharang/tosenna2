@@ -1,0 +1,260 @@
+
+Log written at : 7/15/2015 11:17:14 AM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx?ReturnUrl=/HRMSNet_Dev/default.aspx?
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/15/2015 12:04:47 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'EContactID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1500
+==========================================
+
+Log written at : 7/15/2015 12:05:38 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'EContactID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1500
+==========================================
+
+Log written at : 7/15/2015 12:06:01 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'EContactID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1500
+==========================================
+
+Log written at : 7/15/2015 12:06:28 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'EContactID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1500
+==========================================
+
+Log written at : 7/15/2015 12:06:41 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'EContactID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1500
+==========================================
+
+Log written at : 7/15/2015 12:06:48 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'EContactID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1500
+==========================================
+
+Log written at : 7/15/2015 1:03:17 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/15/2015 1:16:14 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx?ReturnUrl=/HRMSNet_Dev/default.aspx?
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/15/2015 1:21:21 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/15/2015 2:38:41 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/15/2015 3:06:45 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/15/2015 3:10:23 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/15/2015 3:17:40 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/Common/ViewPaySlip.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at SchoolNet.ViewPaySlip.SavePDF_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Common\ViewPaySlip.aspx.cs:line 98
+==========================================
+
+Log written at : 7/15/2015 4:20:04 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx?ReturnUrl=/HRMSNet_Dev/Common/EmployeeSkills.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/15/2015 4:21:53 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/Common/ManageRequests.aspx
+
+Here is the actual error :
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: The remote name could not be resolved: 'smtpout21.emea.aon.bz'
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SchoolNet.ManageRequests.EmailNotification_Requests(String HRAdminName, String HRAdminEmail, String LineManagerName, String LineManagerEmail, String FinanceHeadName, String FinanceHeadEmail, String DeptHeadName, String DeptHeadEmail, String ITHeadName, String ITHeadEmail, String EmpName, String EmpEmail, String RequestTypeName, String NewHireName, String NewHireDate, String NewHireDivision, String NewHireDept, String NewHireLocation, String Note, String StatusName) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Common\ManageRequests.aspx.cs:line 277
+==========================================
+
+Log written at : 7/15/2015 4:29:30 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/Common/LeaveRequest.aspx
+
+Here is the actual error :
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: The remote name could not be resolved: 'smtpout21.emea.aon.bz'
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SchoolNet.LeaveRequest.NotifyApproversViaEmail(String EmpName, String EmpEmail, String LeaveStartDate, String LeaveEndDate, String LeaveType, String LineManagerName, String LineManagerEmail, String DeptHeadName, String DeptHeadEmail, String HRAdminName, String HRAdminEmail) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Common\LeaveRequest.aspx.cs:line 204
+==========================================
+
+Log written at : 7/15/2015 5:59:03 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx?ReturnUrl=/HRMSNet_Dev/Common/EmployeeWorkExp.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/15/2015 8:02:32 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx?ReturnUrl=/HRMSNet_Dev/Common/EmployeeDirectory.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================

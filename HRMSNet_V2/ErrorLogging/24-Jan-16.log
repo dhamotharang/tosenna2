@@ -1,0 +1,311 @@
+
+Log written at : 1/24/2016 10:34:28 AM
+Error occured on page : http://localhost:4116/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/Supervisor/AttendanceRequests.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/24/2016 10:34:44 AM
+Error occured on page : http://localhost:4116/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/24/2016 11:36:08 AM
+Error occured on page : http://localhost:4116/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/default.aspx?
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/24/2016 11:39:08 AM
+Error occured on page : http://localhost:4116/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/24/2016 12:00:12 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/Supervisor/AttendanceRequests.aspx
+
+Here is the actual error :
+System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'spApprove_LeaveRequest' expects parameter '@LeaveRequestID', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at DatabaseManager.Data.BaseDataAccessor.ExecuteDataSet(String sproc, SqlParameter[] parameters)
+   at DatabaseManager.Data.DBAccessManager.Appprove_AttendanceRequest(Int32 MAPunchID, Int32 EmpId, String Approver_Comments, Int32 Approval, Int32 Approver_ID)
+   at SchoolNet.AttendanceRequests.Tab3_Approve_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Supervisor\AttendanceRequests.aspx.cs:line 87
+ClientConnectionId:47d28181-0731-4783-a8b7-96a2949faa77
+Error Number:201,State:4,Class:16
+==========================================
+
+Log written at : 1/24/2016 12:01:09 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/Supervisor/AttendanceRequests.aspx
+
+Here is the actual error :
+System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'spApprove_LeaveRequest' expects parameter '@LeaveRequestID', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at DatabaseManager.Data.BaseDataAccessor.ExecuteDataSet(String sproc, SqlParameter[] parameters)
+   at DatabaseManager.Data.DBAccessManager.Appprove_AttendanceRequest(Int32 MAPunchID, Int32 EmpId, String Approver_Comments, Int32 Approval, Int32 Approver_ID)
+   at SchoolNet.AttendanceRequests.Tab3_Approve_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Supervisor\AttendanceRequests.aspx.cs:line 87
+ClientConnectionId:47d28181-0731-4783-a8b7-96a2949faa77
+Error Number:201,State:4,Class:16
+==========================================
+
+Log written at : 1/24/2016 12:02:32 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/Supervisor/AttendanceRequests.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.AttendanceRequests.Tab3_Approve_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Supervisor\AttendanceRequests.aspx.cs:line 88
+==========================================
+
+Log written at : 1/24/2016 12:07:25 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/Supervisor/AttendanceRequests.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.AttendanceRequests.Tab3_Approve_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Supervisor\AttendanceRequests.aspx.cs:line 88
+==========================================
+
+Log written at : 1/24/2016 12:13:50 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/Supervisor/AttendanceRequests.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.AttendanceRequests.Tab3_Approve_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Supervisor\AttendanceRequests.aspx.cs:line 88
+==========================================
+
+Log written at : 1/24/2016 12:17:28 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/24/2016 12:22:39 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/Common/ManualAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ManualAttendance.ManualPunch_Save_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ManualAttendance.aspx.cs:line 89
+==========================================
+
+Log written at : 1/24/2016 12:26:46 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/Common/ManualAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ManualAttendance.ManualPunch_Save_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ManualAttendance.aspx.cs:line 89
+==========================================
+
+Log written at : 1/24/2016 12:46:00 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/24/2016 12:46:23 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/Supervisor/AttendanceRequests.aspx
+
+Here is the actual error :
+System.Data.SqlClient.SqlException (0x80131904): Procedure or function 'spApprove_AttendanceRequest' expects parameter '@result', which was not supplied.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at DatabaseManager.Data.BaseDataAccessor.ExecuteDataSet(String sproc, SqlParameter[] parameters)
+   at DatabaseManager.Data.DBAccessManager.Appprove_AttendanceRequest(Int32 MAPunchID, Int32 EmpId, String Approver_Comments, Int32 Approval, Int32 Approver_ID)
+   at SchoolNet.AttendanceRequests.Tab3_Approve_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Supervisor\AttendanceRequests.aspx.cs:line 87
+ClientConnectionId:4b93ffba-ce64-4564-813e-ab00b8063d9a
+Error Number:201,State:4,Class:16
+==========================================
+
+Log written at : 1/24/2016 1:41:31 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/24/2016 4:13:19 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/Logout.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/24/2016 4:14:31 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/24/2016 4:20:52 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/24/2016 5:25:22 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/Admin/ManageEmpTA.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/24/2016 6:25:54 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/24/2016 6:33:41 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================

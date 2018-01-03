@@ -1,0 +1,11 @@
+C:\wwwroot\HRMSNet\DatabaseManager.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\wwwroot\HRMSNet\DatabaseManager.Data\obj\Debug\DatabaseManager.Data.dll
+C:\wwwroot\HRMSNet\DatabaseManager.Data\bin\Debug\DatabaseManager.Data.dll
+C:\wwwroot\HRMSNet\DatabaseManager.Data\bin\Debug\DatabaseManager.Data.pdb
+C:\wwwroot\HRMSNet\DatabaseManager.Data\obj\Debug\DatabaseManager.Data.pdb
+C:\wwwroot\HRMSNet\DatabaseManager.Data\bin\Release\DatabaseManager.Data.dll
+C:\wwwroot\HRMSNet\DatabaseManager.Data\obj\Release\ResolveAssemblyReference.cache
+C:\wwwroot\HRMSNet\DatabaseManager.Data\obj\Release\DatabaseManager.Data.dll
+C:\wwwroot\HRMSNet_Dev\DatabaseManager.Data\bin\Release\DatabaseManager.Data.dll
+C:\wwwroot\HRMSNet_Dev\DatabaseManager.Data\obj\Release\ResolveAssemblyReference.cache
+C:\wwwroot\HRMSNet_Dev\DatabaseManager.Data\obj\Release\DatabaseManager.Data.dll

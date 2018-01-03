@@ -1,0 +1,168 @@
+
+Log written at : 7/19/2015 1:55:54 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/19/2015 4:25:56 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/19/2015 5:32:42 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/19/2015 5:33:53 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/19/2015 5:55:22 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/19/2015 6:51:39 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/Clerical/EnterDailyFnTrans.aspx
+
+Here is the actual error :
+System.Data.OleDb.OleDbException (0x80004005): External table is not in the expected format.
+   at System.Data.OleDb.OleDbConnectionInternal..ctor(OleDbConnectionString constr, OleDbConnection connection)
+   at System.Data.OleDb.OleDbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.OleDb.OleDbConnection.Open()
+   at SchoolNet.EnterDailyFnTrans.Import_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Clerical\EnterDailyFnTrans.aspx.cs:line 409
+==========================================
+
+Log written at : 7/19/2015 6:53:05 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/19/2015 6:54:08 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/19/2015 6:54:30 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/19/2015 7:31:34 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/Payroll/PreviewMonthlyPayroll.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at SchoolNet.PreviewMonthlyPayroll.ExportToExcel(DataTable dt) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Payroll\PreviewMonthlyPayroll.aspx.cs:line 168
+   at SchoolNet.PreviewMonthlyPayroll.PreviewEmployeeMonthlyPayroll(String Pay_MonthYear, Int32 DivisionID, Int32 DivisionLocationID, Int32 RequestingEmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Payroll\PreviewMonthlyPayroll.aspx.cs:line 75
+==========================================
+
+Log written at : 7/19/2015 7:34:00 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/Payroll/PreviewMonthlyPayroll.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at SchoolNet.PreviewMonthlyPayroll.ExportToExcel(DataTable dt) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Payroll\PreviewMonthlyPayroll.aspx.cs:line 168
+   at SchoolNet.PreviewMonthlyPayroll.PreviewEmployeeMonthlyPayroll(String Pay_MonthYear, Int32 DivisionID, Int32 DivisionLocationID, Int32 RequestingEmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Payroll\PreviewMonthlyPayroll.aspx.cs:line 75
+==========================================
+
+Log written at : 7/19/2015 7:40:03 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/Payroll/RunMonthlyPayroll.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at SchoolNet.RunMonthlyPayroll.ExportToExcel(DataTable dt) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Payroll\RunMonthlyPayroll.aspx.cs:line 161
+   at SchoolNet.RunMonthlyPayroll.RunEmployeeMonthlyPayroll(String Pay_MonthYear, Int32 DivisionID, Int32 DivisionLocationID, Int32 RequestingEmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Payroll\RunMonthlyPayroll.aspx.cs:line 70
+==========================================

@@ -1,0 +1,913 @@
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Globalization;
+using System.Web.Security;
+using System.Web.UI;
+using System.Net.Mail;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using PresentationManager.Web.UI.MasterPages;
+
+namespace SchoolNet
+{
+    public partial class ManageLeave : SchoolNetBase
+    {
+        public int EmpId;
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            EmpId = Int32.Parse(Page.User.Identity.Name.ToString());
+            if (!Page.IsPostBack)
+            {
+                LoadLeaveTypeLookup(Tab1_LeaveTypeList);
+                LoadLeavePeriodLookup(Tab1_LeavePeriodList);
+                LoadLeavePeriodLookup(Tab2_LeavePeriodList);                
+                LoadLeaveTypeLookup(Tab3_LeaveTypeList);
+                LoadLeaveTypeLookup(Tab2_LeaveTypeList);
+                LoadEmpStatusLookup(this.empStatusDDList);
+                LoadDesignationLookup(this.jobTitleDDList);
+                LoadDivisionLookupByEmpId(businessUnitDDList, Int32.Parse(Page.User.Identity.Name.ToString()));
+                LoadEntityLocationLookupByEmpId_DivisionID(DivisionLocationList, Int32.Parse(Page.User.Identity.Name.ToString()), Int32.Parse(businessUnitDDList.SelectedValue));
+                LoadSupervisorsListLookup(Tab1_SuperVisorList);
+
+            }
+            if (Int32.Parse(DivisionLocationList.SelectedValue) == -1)
+            {
+                LoadEntityLocationLookupByEmpId_DivisionID(DivisionLocationList, Int32.Parse(Page.User.Identity.Name.ToString()), Int32.Parse(businessUnitDDList.SelectedValue));
+            }
+
+           // LoadCurrentEntitlement();
+            LoadDataList();
+
+            if (this.keyField.Text.ToString() != "")
+            {
+                LoadCurrentEntitlement();
+                LoadLeaveRequestList();
+                LoadPendingLeaveRequestList();
+            }
+
+        }
+        #region Web Form Designer generated code
+        override protected void OnInit(EventArgs e)
+        {
+            //
+            // CODEGEN: This call is required by the ASP.NET Web Form Designer.
+            //
+            InitializeComponent();
+            base.OnInit(e);
+            this.EnableViewState = true;
+        }
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+
+            Grid.PageIndexChanged += new DataGridPageChangedEventHandler(this.Grid_PageIndexChanged);
+            Grid.SortCommand += new DataGridSortCommandEventHandler(Grid_SortCommand);
+            LGrid.PageIndexChanged +=new DataGridPageChangedEventHandler(LGrid_PageIndexChanged);
+            EGrid.PageIndexChanged +=new DataGridPageChangedEventHandler(EGrid_PageIndexChanged);
+            ALGrid.PageIndexChanged +=new DataGridPageChangedEventHandler(ALGrid_PageIndexChanged);
+            Search.Click += new EventHandler(Search_Click);
+            Reset.Click +=new EventHandler(Reset_Click);
+            Entitlement_Save.Click +=new EventHandler(Entitlement_Save_Click);
+            Entitlement_Cancel.Click +=new EventHandler(Entitlement_Cancel_Click);
+            tab1.Click += new EventHandler(tab1_Click);
+            tab2.Click += new EventHandler(tab2_Click);
+            tab3.Click +=new EventHandler(tab3_Click);
+            Tab3_Approve.Click +=new EventHandler(Tab3_Approve_Click);
+            Tab3_Reset.Click   +=new EventHandler(Tab3_Reset_Click);
+            Tab2_Cancel.Click +=new EventHandler(Tab2_Cancel_Click);
+            Tab2_Reset.Click +=new EventHandler(Tab2_Reset_Click);
+            
+        }
+        #endregion
+        #region Load LoadDataList
+        private void LoadDataList()
+        {
+            try{
+            DataSet _DataList = null;
+            if (ViewState["myDataSet"] == null)   // No such value in view state, take appropriate action.
+            {
+
+                _DataList = DatabaseManager.Data.DBAccessManager.RetrieveEmployeeList_Search(Int32.Parse(Page.User.Identity.Name.ToString()), empName.Text.ToString(), emp_ID.Text.ToString(), mgrName.Text.ToString(), Int32.Parse(empStatusDDList.SelectedValue), Int32.Parse(jobTitleDDList.SelectedValue), Int32.Parse(businessUnitDDList.SelectedValue), Int32.Parse(DivisionLocationList.SelectedValue));
+
+                if (_DataList.Tables[0].Rows.Count > 0)
+                {
+                    this.Grid.DataSource = _DataList;
+                    this.Grid.DataBind();
+                    emptyRow.Text = "";
+                    emptyRow.Visible = false;
+                    SetViewState(_DataList);
+
+                }
+                else
+                {
+                    this.Grid.DataSource = null;
+                    this.Grid.DataBind();
+                    emptyRow.Visible = true;
+                    emptyRow.CssClass = "errorMessage";
+                    emptyRow.Text = "There are no matching records found.";
+                }
+            }
+            else  // If it is avaiable in the viewstate bind it from there.
+            {
+                _DataList = GetViewState();
+                this.Grid.DataSource = _DataList;
+                this.Grid.DataBind();
+
+            }
+            }
+            catch (Exception exception)
+            {
+                 Grid.CurrentPageIndex = 0;
+                 Grid.DataBind();
+            }
+
+
+
+        }
+     #endregion
+        #region LoadCurrentEntitlement()
+        private void LoadCurrentEntitlement()
+        {
+            DataSet _DataList = null;
+            Tab1_EmptyRow.Visible = false;
+            _DataList = DatabaseManager.Data.DBAccessManager.RetrieveLeaveEntitlements(Int32.Parse(keyField.Text.ToString()));
+
+            if (_DataList.Tables[0].Rows.Count > 0)
+            {
+                this.EGrid.DataSource = _DataList;
+                this.EGrid.DataBind();
+            }
+            else
+            {
+                this.EGrid.DataSource = null;
+                this.EGrid.DataBind();
+                Tab1_EmptyRow.Visible = true;
+                Tab1_EmptyRow.CssClass = "errorMessage";
+                Tab1_EmptyRow.Text = "There are no leave entitlement records set for this year.Please setup Leave entitlements for this leave year.";
+            }
+        }
+        #endregion
+
+        #region LoadLeaveRequestList();
+        private void LoadLeaveRequestList()
+        {
+            DataSet _DataList = null;
+            Tab2_EmptyRow.Visible = false;
+            Int32 RequestType = (int)Constants.LeaveRequestType.Processed; // Returns approved, closed, cancelled,rejected requests
+            _DataList = DatabaseManager.Data.DBAccessManager.RetrieveLeaveRequestsByLeavePeriod(Int32.Parse(keyField.Text.ToString()), Int32.Parse(Tab2_LeavePeriodList.SelectedValue), RequestType); 
+
+            if (_DataList.Tables[0].Rows.Count > 0)
+            {
+                emptyRow.Visible = false;
+                this.LGrid.DataSource = _DataList;
+                this.LGrid.DataBind();
+
+            }
+            else
+            {
+                this.LGrid.DataSource = null;
+                this.LGrid.DataBind();
+                Tab2_EmptyRow.Visible = true;
+                Tab2_EmptyRow.CssClass = "errorMessage";
+                Tab2_EmptyRow.Text = "There are no matching records found.";
+
+            }
+        }
+        #endregion
+
+        #region LoadPendingLeaveRequestList();
+        private void LoadPendingLeaveRequestList()
+        {
+            DataSet _DataList = null;
+            Tab3_EmptyRow.Visible = false;
+            Int32 RequestType = (int)Constants.LeaveRequestType.Pending; // Returns only submitted,pending approval
+            _DataList = DatabaseManager.Data.DBAccessManager.RetrieveLeaveRequestsByLeavePeriod(Int32.Parse(keyField.Text.ToString()), Int32.Parse(Tab2_LeavePeriodList.SelectedValue), RequestType); 
+
+            if (_DataList.Tables[0].Rows.Count > 0)
+            {
+                Tab3_EmptyRow.Visible = false;
+                this.ALGrid.DataSource = _DataList;
+                this.ALGrid.DataBind();
+
+            }
+            else
+            {
+                this.ALGrid.DataSource = null;
+                this.ALGrid.DataBind();
+                Tab3_EmptyRow.Visible = true;
+                Tab3_EmptyRow.CssClass = "errorMessage";
+                Tab3_EmptyRow.Text = "There are no pending leave request found.";
+
+            }
+        }
+        #endregion
+
+        #region Tab2_Cancel_Click
+        protected void Tab2_Cancel_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                if (Page.IsValid == true)
+                {
+                    if (Tab2_keyField.Text.ToString()== "0")
+                    {
+                        Tab2_Message2.Visible = true;
+                        Tab2_Message2.Text = "Please select the leave request to cancel.";
+                        Tab2_Message2.CssClass = "errorMessage";
+                        return;
+                    }
+                    DataSet _DataList = null;
+                    _DataList = DatabaseManager.Data.DBAccessManager.Cancel_ApprovedLeaveRequest(Convert.ToInt32(Tab2_keyField.Text), Convert.ToInt32(keyField.Text), Tab2_ApproverComments.Text.ToString(), EmpId);
+                    if (_DataList.Tables[0].Rows.Count > 0)
+                    {
+                        String Result, LineManagerName, LineManagerEmail, EmpName, EmpEmail, LeaveType, LeaveStartDate, LeaveEndDate, StatusName;
+                        DataRow _DataRow = _DataList.Tables[0].Rows[0];
+                        Result = _DataRow["Result"].ToString();
+                        if (Result == "")
+                        {
+                            EmpName = _DataRow["EmpName"].ToString();
+                            EmpEmail = _DataRow["EmpEmail"].ToString();
+                            LeaveStartDate = _DataRow["LeaveDate"].ToString();
+                            LeaveEndDate = _DataRow["LeaveEndDate"].ToString();
+                            LeaveType = _DataRow["LeaveType"].ToString();
+                            StatusName = _DataRow["StatusName"].ToString();
+
+                            if (StatusName != "")
+                            {
+                                if (EmpEmail != "") // Notify via Email if Email was used as a user Name                                           
+                                {
+                                    LeaveRequestCancel_Notification(EmpName, EmpEmail, LeaveStartDate, LeaveEndDate, LeaveType, StatusName);
+
+                                }
+                                Tab2_Message2.Visible = true;
+                                Tab2_Message2.Text = "This request has been successfully cancelled and employee has been notified via email.";
+                                Tab2_Message2.CssClass = "errorMessage";
+                                ResetFields();
+                            }
+                        }
+                        else
+                        {
+                            Tab2_Message2.Visible = true;
+                            Tab2_Message2.Text = Result;
+                            Tab2_Message2.CssClass = "errorMessage";
+
+                        }
+                    }
+                }
+                else
+                {
+                    Tab2_Message2.Visible = true;
+                    Tab2_Message2.Text = "Error:Could not save the information. Please check the inputs";
+                    Tab2_Message2.CssClass = "errorMessage";
+                }
+                LoadPendingLeaveRequestList();// Refresh the grid
+
+            }
+            catch (Exception exception)
+            {
+                Tab2_Message.Visible = true;
+                Tab2_Message.Text = ErrorLogging.LogError(exception, "Unknown Exception Occured. Please contact support.");
+                Tab2_Message.CssClass = "errorMessage";
+            }
+        }
+        #endregion
+
+
+        #region Tab3_Approve_Click
+        protected void Tab3_Approve_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                if (Page.IsValid == true)
+                {
+                    Int32 Approval = 0; Int32 LeavePayType = 0;
+                    if (Tab3_keyField.Text.ToString() == "") { Tab3_keyField.Text = "0"; }
+                    if (Tab3_ApprRB1.Checked) { Approval = 1; }
+                    if (Tab3_ApprRB2.Checked) { Approval = 0; }
+
+                    if (Tab3_Rb1_PayType1.Checked) { LeavePayType = 1; }
+                    if (Tab3_Rb1_PayType2.Checked) { LeavePayType = 0; }
+                    
+                    DataSet _DataList = null;
+                    _DataList = DatabaseManager.Data.DBAccessManager.Appprove_LeaveRequest(Convert.ToInt32(Tab3_keyField.Text), Convert.ToInt32(keyField.Text), Tab3_ApproverComments.Text.ToString(),LeavePayType, Approval, EmpId);
+                    if (_DataList.Tables[0].Rows.Count > 0)
+                    {
+                        String Result, LineManagerName, LineManagerEmail, EmpName, EmpEmail,LeaveType, LeaveStartDate, LeaveEndDate,StatusName;
+                        DataRow _DataRow = _DataList.Tables[0].Rows[0];
+                        Result = _DataRow["Result"].ToString();
+                        if (Result == "")
+                        {
+                            LineManagerName = _DataRow["ApproverName"].ToString();
+                            LineManagerEmail = _DataRow["ApproverEmail"].ToString();
+                            EmpName = _DataRow["EmpName"].ToString();
+                            EmpEmail = _DataRow["EmpEmail"].ToString();
+                            LeaveStartDate = _DataRow["LeaveDate"].ToString();
+                            LeaveEndDate = _DataRow["LeaveEndDate"].ToString();
+                            LeaveType = _DataRow["LeaveType"].ToString();
+                            StatusName = _DataRow["StatusName"].ToString();
+
+                            if ((LineManagerEmail != "") && (EmpEmail != "")) // Notify via Email if Email was used as a user Name                                           
+                            {
+                                LeaveRequestApproval_Notification(EmpName, EmpEmail, LeaveStartDate, LeaveEndDate, LeaveType,StatusName, LineManagerName, LineManagerEmail);
+
+                            }
+
+                            ResetFields();
+
+                        }
+                        else
+                        {
+                            Tab3_Message.Visible = true;
+                            Tab3_Message.Text = Result;
+                            Tab3_Message.CssClass = "errorMessage";
+
+                        }
+                    }
+                }
+                else
+                {
+                    Tab3_Message.Visible = true;
+                    Tab3_Message.Text = "Error:Could not save the information. Please check the inputs";
+                    Tab3_Message.CssClass = "errorMessage";
+                }
+                LoadPendingLeaveRequestList();// Refresh the grid
+
+            }
+            catch (Exception exception)
+            {
+                Tab3_Message.Visible = true;
+                Tab3_Message.Text = ErrorLogging.LogError(exception,"Unknown Exception Occured. Please contact support.");
+                Tab3_Message.CssClass = "errorMessage";
+            }
+        }
+        #endregion
+        private void LeaveRequestCancel_Notification(String EmpName, String EmpEmail, String LeaveStartDate, String LeaveEndDate, String LeaveType, String StatusName)
+        {
+
+            string HRSystemLink = ConfigurationManager.AppSettings["HRSystemURL"].ToString();
+            string FromAddressDisplayName = ConfigurationManager.AppSettings["FromEmailDisplayName"].ToString();
+
+            string subject = "Ark HRMS Alerting Service:Leave Request Cancellation Alert for " + EmpName;
+
+            string bodycontent = "<html><body leftmargin=10 style=\"font-family: Arial;font-size:11\">" +
+                                 "<P><br> Hello " + EmpName + "," +
+                                 "<br><br>As per your request, Your HR administrator has cancelled your previously approved leave request details as given below." +
+                                 "<br><br>Now,You should delete this cancelled request in order to file another request." +
+                                 "<br><br> To view the status update on this request or file a new request, please go to <a href id=a1 runat=server href=" + HRSystemLink + ">" + FromAddressDisplayName + "</a>" +
+                                 "<br><br><u><b>Leave Request Details</b></u>" +
+                                 "<br><br>Leave Start Date :" + DateTime.Parse(LeaveStartDate.ToString()).ToString(@"dd/MM/yyyy") +
+                                 "<br>Leave End Date :" + DateTime.Parse(LeaveEndDate.ToString()).ToString(@"dd/MM/yyyy") +
+                                 "<br>Leave Type :" + LeaveType.ToString() +
+                                 "<br>Statuse :" + StatusName.ToString() +
+                                 "<br><br>If you have not made this request or made in error, Please contact your Local HR Administrator!." +
+                                 "<br><br><br><font-size:14>THIS IS AN AUTOMATED,UNMONITORED EMAIL.PLEASE DO NOT REPLY OR FORWARD TO THIS EMAIL ADDRESS." +
+                                 "</P></body></HTML>";
+
+            try
+            {
+                string fromEmail = ConfigurationManager.AppSettings["FromEmail"].ToString();
+                MailMessage message = new MailMessage();
+                message.IsBodyHtml = true;
+                message.From = new MailAddress(fromEmail, FromAddressDisplayName);
+                message.Subject = subject;
+                message.Body = bodycontent;
+
+                if (EmpEmail.Trim() != "")
+                {
+                    message.To.Add(EmpEmail.Trim());
+                }           
+                SmtpClient smtp = new SmtpClient();
+                smtp.Send(message);
+
+            }
+            catch (Exception exception)
+            {
+                this.Tab2_Message2.Visible = true;
+                this.Tab2_Message2.Text = ErrorLogging.LogError(exception, "There was an error in notifying leave request for cancellation.");
+                this.Tab2_Message2.CssClass = "errorMessage";
+
+            }
+
+        }
+
+        private void LeaveRequestApproval_Notification(String EmpName, String EmpEmail, String LeaveStartDate, String LeaveEndDate, String LeaveType, String StatusName, String LineManagerName, String LineManagerEmail)
+        {
+          
+            string HRSystemLink = ConfigurationManager.AppSettings["HRSystemURL"].ToString();
+            string FromAddressDisplayName = ConfigurationManager.AppSettings["FromEmailDisplayName"].ToString();
+
+            string subject = "Ark HRMS Alerting Service:Leave Request Approval Status Alert for " + EmpName;
+
+            string bodycontent = "<html><body leftmargin=10 style=\"font-family: Arial;font-size:11\">" +
+                                 "<P><br> Hello " + EmpName + "," +
+                                 "<br><br> Your leave request as given below has been " + StatusName + " by " + LineManagerName +
+                                 "<br><br> To view the status update on your leave request(s), please go to <a href id=a1 runat=server href=" + HRSystemLink + ">" + FromAddressDisplayName + "</a>" +
+                                 "<br><br><u><b>Leave Request Details</b></u>" +
+                                 "<br><br>Leave Start Date :" + DateTime.Parse(LeaveStartDate.ToString()).ToString(@"dd/MM/yyyy") +
+                                 "<br>Leave End Date :" + DateTime.Parse(LeaveEndDate.ToString()).ToString(@"dd/MM/yyyy") +
+                                 "<br>Leave Type :" + LeaveType.ToString() +
+                                 "<br><br><br><font-size:14>THIS IS AN AUTOMATED,UNMONITORED EMAIL.PLEASE DO NOT REPLY OR FORWARD TO THIS EMAIL ADDRESS." +
+                                 "</P></body></HTML>";           
+
+            try
+            {
+                string fromEmail = ConfigurationManager.AppSettings["FromEmail"].ToString();
+                MailMessage message = new MailMessage();
+                message.IsBodyHtml = true;
+                message.From = new MailAddress(fromEmail,FromAddressDisplayName);
+                message.Subject = subject; 
+                message.Body = bodycontent;
+
+                if (EmpEmail.Trim() != "")
+                {
+                    message.To.Add(EmpEmail.Trim());
+                }                    
+
+                // Add a carbon copy recipient.
+                if (LineManagerEmail.Trim() != "")
+                {
+                    MailAddress copy = new MailAddress(LineManagerEmail);
+                    message.CC.Add(copy);
+                }
+                SmtpClient smtp = new SmtpClient();
+                smtp.Send(message);
+
+            }
+            catch (Exception exception)
+            {
+                this.Tab3_Message.Visible = true;
+                this.Tab3_Message.Text = ErrorLogging.LogError(exception,"There was an error in notifying leave request for approval.");
+                this.Tab3_Message.CssClass = "errorMessage";
+
+            }
+
+        }
+
+
+        #region Reset_Click
+        protected void Reset_Click(object sender, EventArgs e)
+        {
+            empName.Text = "";
+            emp_ID.Text = "";
+            mgrName.Text = "";
+            empStatusDDList.SelectedIndex = -1;
+            jobTitleDDList.SelectedIndex = -1;
+            businessUnitDDList.SelectedIndex = -1;
+            DivisionLocationList.SelectedIndex = -1;
+
+        }
+        #endregion
+        #region Tab2_Reset_Click
+        protected void Tab2_Reset_Click(object sender, EventArgs e)
+        {
+            ResetFields();
+            Tab2_Message2.Text = "";
+            Tab2_Message2.Visible = false;
+        }
+        #endregion
+        #region Tab3_Reset_Click
+        protected void Tab3_Reset_Click(object sender, EventArgs e)
+        {
+            Tab3_keyField.Text = "0";
+            Tab3_StartDate.Text = "";
+            Tab3_ApproverComments.Text = "";
+            Tab3_EndDate.Text = "";
+            Tab3_Comments.Text = "";
+            Tab3_LeaveTypeList.SelectedIndex = -1;
+            Tab3_Message.Visible = false;
+            Tab3_EmptyRow.Visible = false;
+            Tab3_EmpName.Text = "";
+
+         }
+        #endregion
+
+        private void ResetFields()
+        {
+            Tab2_keyField.Text = "0";
+            Tab2_LeavePeriodList.SelectedIndex = -1;
+            Tab2_Message.Visible = false;
+            Tab2_EmptyRow.Visible = false;
+            Tab3_keyField.Text = "0";
+            Tab3_StartDate.Text = "";
+            Tab3_EndDate.Text = "";
+            Tab3_Comments.Text = "";
+            Tab3_ApproverComments.Text = "";
+            Tab3_LeaveTypeList.SelectedIndex = -1;
+            Tab3_Message.Visible = false;
+            Tab3_EmptyRow.Visible = false;
+            Tab3_EmpName.Text = "";
+            Tab1_Entitlement.Text = "";
+            Tab1_Message.Visible = false;
+            Tab1_LeaveTypeList.SelectedIndex = -1;
+            Tab1_LeavePeriodList.SelectedIndex = -1;
+            Tab3_ApprRB1.Checked = true;
+            Tab3_ApprRB2.Checked = false;
+            Tab2_ApproverComments.Text = "";
+        }
+
+        private void TabSettings()
+        {
+            message.Visible = false;
+            Tab1_Pane.Visible = false;
+            Tab2_Pane.Visible = false;
+            Tab3_Pane.Visible = false;
+     
+        }
+        protected void tab1_Click(object sender, EventArgs e)
+        {
+            TabSettings();
+            Tab1_Pane.Visible = true;           
+
+        }
+        protected void tab2_Click(object sender, EventArgs e)
+        {
+            TabSettings();
+            Tab2_Pane.Visible = true;
+        }
+        protected void tab3_Click(object sender, EventArgs e)
+        {
+            TabSettings();
+            Tab3_Pane.Visible = true;
+
+       
+        }
+        protected void tab4_Click(object sender, EventArgs e)
+        {
+            TabSettings();
+     //       LoadEContactList();
+//            Tab4_Pane.Visible = true;
+  //          ECmessage.Text = "";
+            // ResetEContactFields();
+
+        }
+
+
+
+
+        protected void Entitlement_Save_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                if (Page.IsValid == true)
+                {
+                    Int32 LineMgr_Approval = 1; 
+                    Int32 DeptHead_Approval = 0;
+                    if (Tab1_ApprCheckBox1.Checked) {LineMgr_Approval = 1;}
+                    if (Tab1_ApprCheckBox2.Checked) {DeptHead_Approval = 1;}
+                  
+
+                    if ( Tab1_keyField.Text.ToString()== "" ) {Tab1_keyField.Text ="0";}
+                    if (Tab1_Entitlement.Text.ToString() == "") { Tab1_Entitlement.Text = "0"; }
+
+                    String Result = DatabaseManager.Data.DBAccessManager.AddUpdateLeaveEntitlement(Int32.Parse(keyField.Text.ToString()), Convert.ToInt32(Tab1_keyField.Text), Int32.Parse(Tab1_LeaveTypeList.SelectedValue), Int32.Parse(Tab1_LeavePeriodList.SelectedValue), Decimal.Parse(NumericCheck_EmptyString(Tab1_Entitlement.Text)), LineMgr_Approval, DeptHead_Approval, Int32.Parse(Tab1_SuperVisorList.SelectedValue), Int32.Parse(Page.User.Identity.Name.ToString()));
+                    this.Tab1_Message.Visible = true;
+                    this.Tab1_Message.CssClass = "errorMessage";
+                    if (Result == "")
+                    {
+                        this.Tab1_Message.Text = "Successfully saved.";
+                        ResetTab1();
+                    }
+                    else
+                    {
+                        this.Tab1_Message.Text = Result;
+                      
+                    }                   
+                }
+              
+            }
+            catch (Exception exception)
+            {
+                Tab1_Message.Visible = true;
+                Tab1_Message.Text = ErrorLogging.LogError(exception,"Unknown Exception Occured. Please contact support.");
+                Tab1_Message.CssClass = "errorMessage";
+            }
+            LoadCurrentEntitlement();
+        }
+        protected void Entitlement_Cancel_Click(object sender, EventArgs e)
+        {
+            ResetTab1();
+
+        }
+ 
+        private void ResetTab1()
+        {
+            Tab1_Entitlement.Text = "";
+            Tab1_Message.Visible = false;
+            Tab1_LeaveTypeList.SelectedIndex = -1;
+            Tab1_LeavePeriodList.SelectedIndex = -1;
+            Tab1_keyField.Text = "";
+            Tab1_SuperVisorList.SelectedIndex = -1;
+
+        }
+        private void DeleteEntitlement(Int32 EntitlementID)
+        {
+            try
+            {
+                String result = DatabaseManager.Data.DBAccessManager.DeleteLeaveEntitlement(EntitlementID, Int32.Parse(keyField.Text.ToString()));
+
+                if (result != "")
+                {
+                    Tab1_Message.Text = "Error:Could not delete the contact. Please check the data";
+                    Tab1_Message.CssClass = "errorMessage";
+
+                }
+            }
+            catch (Exception exception)
+            {
+                Tab1_Message.Text = ErrorLogging.LogError(exception, "Unknown Exception Occured.Please contact Support.");
+                Tab1_Message.CssClass = "errorMessage";
+            }
+            EGrid.CurrentPageIndex = 0;
+            LoadCurrentEntitlement();
+            ResetTab1();
+
+        }
+        private void DeleteLeaveRequest(Int32 LeaveRequestID)
+        {
+            try
+            {
+                String result = DatabaseManager.Data.DBAccessManager.DeleteLeaveRequest(LeaveRequestID, Int32.Parse(keyField.Text.ToString()));
+
+                if (result != "")
+                {
+                    Tab2_Message.Visible = true;
+                    Tab2_Message.Text = result;
+                    Tab2_Message.CssClass = "errorMessage";
+
+                }
+            }
+            catch (Exception exception)
+            {
+                Tab2_Message.Visible = true;
+                Tab2_Message.Text = ErrorLogging.LogError(exception, "Unknown Exception Occured.Please contact Support.");
+                Tab2_Message.CssClass = "errorMessage";
+
+            }
+            LGrid.CurrentPageIndex = 0;
+            LoadLeaveRequestList();
+
+        }
+        protected void Search_Click(object sender, EventArgs e)
+        {
+
+            SetViewState(null);
+            LoadDataList();
+
+
+        }
+
+        //This is invoked when the grid column is Clicked for Sorting, 
+        //Clicking again will Toggle Descending/Ascending through the Sort Expression
+        protected void Grid_SortCommand(object sender, DataGridSortCommandEventArgs e)
+        {
+            DataSet myDataSet = GetViewState();
+            DataTable myDataTable = myDataSet.Tables[0];
+            GridViewSortExpression = e.SortExpression;
+            //Gets the Pageindex of the GridView.
+            int iPageIndex = Grid.CurrentPageIndex;
+            DataView _dataView = SortDataTable(myDataTable, false);
+            Grid.DataSource = _dataView;
+            Grid.DataBind();
+            Grid.CurrentPageIndex = iPageIndex;
+            // Rebind the sorted data into ViewState
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            dt = _dataView.ToTable();
+            ds.Merge(dt);
+            SetViewState(ds);
+        }
+                
+
+        protected void Grid_PageIndexChanged(object source, DataGridPageChangedEventArgs e)
+        {
+            DataSet myDataSet = GetViewState();
+            DataTable myDataTable = myDataSet.Tables[0];
+            DataView _dataView = SortDataTable(myDataTable, true);
+            Grid.DataSource = _dataView;
+            Grid.CurrentPageIndex = e.NewPageIndex;
+            Grid.DataBind();
+            // Rebind the sorted data into ViewState
+            DataTable dt = new DataTable();
+            DataSet ds = new DataSet();
+            dt = _dataView.ToTable();
+            ds.Merge(dt);
+            SetViewState(ds);
+
+            
+           // Grid.CurrentPageIndex = e.NewPageIndex;
+           // LoadDataList(); 
+        }
+        protected void Grid_EditCommand(object source, DataGridCommandEventArgs e)
+        {
+
+            this.keyField.Text = Grid.DataKeys[e.Item.ItemIndex].ToString();
+            Grid.EditItemIndex = e.Item.ItemIndex;
+            this.EmpSearchBox.Visible = false;
+            this.searchDataArea.Visible = false;
+            this.EditArea.Visible = true;
+            this.Tab1_Pane.Visible = true;
+            LoadCurrentEntitlement();
+            LoadKeyEmployeeInformation(Int32.Parse(this.keyField.Text));
+
+        }
+
+        protected void LoadKeyEmployeeInformation(Int32 EmpId)
+        {
+            DataSet _DataList = null;
+            _DataList = DatabaseManager.Data.DBAccessManager.RetrieveKeyEmpInfo(EmpId);
+            if (_DataList.Tables.Count > 0)
+            {
+                DataRow _DataRow = _DataList.Tables[0].Rows[0];
+                lblEmployeeName.Text = _DataRow["F_Name"].ToString() + " " + _DataRow["Mid_Initial"].ToString() + " " + _DataRow["L_Name"].ToString();
+                lblJobTitle.Text = _DataRow["Designation"].ToString();
+                lblJobLocation.Text = _DataRow["Work_City"].ToString() + "/" + _DataRow["CountryName"].ToString();
+                lblWorkPhone.Text = _DataRow["Work_Phone"].ToString() + "(W)";
+                lblMobile.Text = _DataRow["Mobile_Phone"].ToString() + "(M)";
+                lblEmailAddress.Text = _DataRow["Work_Email"].ToString();
+                //lblSuperVisorName.Text = _DataRow["LineManager"].ToString();
+                lblSuperVisorName.Text = _DataRow["SupervisorName"].ToString();
+                lblSuperVisor_Phone.Text = _DataRow["Supervisor_Phone"].ToString();
+                lblSuperVisor_EmailAddress.Text = _DataRow["Supervisor_Email"].ToString();
+                lblDivision.Text = _DataRow["DivisionName"].ToString();
+                lblDivisionLocation.Text = _DataRow["DivisionLocationName"].ToString();
+                lblSuperVisor_JobLocation.Text = _DataRow["Supervisor_WorkLocation"].ToString();
+                lblSuperVisor_JobTitle.Text = _DataRow["Supervisor_Designation"].ToString();
+                lblSuperVisor_Division.Text = _DataRow["Supervisor_Division"].ToString();
+                lblSuperVisor_DivisionLocation.Text = _DataRow["Supervisor_BULocation"].ToString();
+
+
+                if (_DataRow["Photo_Path"].ToString() != "")
+                {
+                    this.profile.ImageUrl = Page.ResolveUrl("~\\PhotoProfiles\\" + _DataRow["Photo_Path"].ToString());
+
+                }
+                else
+                {
+                    this.profile.ImageUrl = Page.ResolveUrl("~\\PhotoProfiles\\" + "d_Photo.jpg");
+                }
+
+            }
+
+
+        }
+
+        protected void Grid_CancelCommand(object source, DataGridCommandEventArgs e)
+        {
+            Grid.EditItemIndex = -1;
+           // LoadDataList();
+        }
+        protected void Grid_DeleteCommand(object source, DataGridCommandEventArgs e)
+        {
+      
+        }
+        protected void Grid_UpdateCommand(object source, DataGridCommandEventArgs e)
+        {
+   
+        }
+        protected void EGrid_PageIndexChanged(object source, DataGridPageChangedEventArgs e)
+        {
+            EGrid.CurrentPageIndex = e.NewPageIndex;
+            LoadCurrentEntitlement();
+        }
+        protected void EGrid_EditCommand(object source, DataGridCommandEventArgs e)
+        {
+            this.Tab1_keyField.Text = EGrid.DataKeys[e.Item.ItemIndex].ToString();
+            LoadLeaveTypeLookup(Tab1_LeaveTypeList);
+            LoadLeavePeriodLookup(Tab1_LeavePeriodList);
+           
+            EGrid.EditItemIndex = -1;           
+        
+            DataSet _DataList = null;
+            _DataList = DatabaseManager.Data.DBAccessManager.RetrieveLeaveEntitlementInfo(Int32.Parse(Tab1_keyField.Text.ToString()));
+            if (_DataList.Tables.Count > 0)
+            {
+                if (_DataList.Tables[0].Rows.Count > 0) // Leave Entitlement Information.
+                {
+                    DataRow _DataRow = _DataList.Tables[0].Rows[0];
+                    if (_DataRow["LeaveTypeID"].ToString() != "")
+                    {
+                        Tab1_LeaveTypeList.SelectedValue = _DataRow["LeaveTypeID"].ToString();
+                    }
+
+                    if (_DataRow["LeavePeriodID"].ToString() != "")
+                    {
+                        Tab1_LeavePeriodList.SelectedValue = _DataRow["LeavePeriodID"].ToString();
+                    }
+
+                    Tab1_Entitlement.Text = _DataRow["Annual_Entitlement"].ToString();
+                    
+                    if (_DataRow["Dept_Approval"].ToString() == "1")
+                    { Tab1_ApprCheckBox2.Checked = true; }
+                    else 
+                    { Tab1_ApprCheckBox2.Checked = false; }
+
+                    if (_DataRow["LineMgr_Approval"].ToString() == "1")
+                    { Tab1_ApprCheckBox1.Checked = true; }
+                    else
+                    { Tab1_ApprCheckBox1.Checked = false; }
+
+                    if (_DataRow["SecondApproverID"].ToString() != "")
+                    {
+                        Tab1_SuperVisorList.SelectedValue = _DataRow["SecondApproverID"].ToString();
+                    }
+
+                }
+            }
+
+        }
+        protected void EGrid_CancelCommand(object source, DataGridCommandEventArgs e)
+        {
+            EGrid.EditItemIndex = -1;
+            // LoadDataList();
+        }
+        protected void EGrid_DeleteCommand(object source, DataGridCommandEventArgs e)
+        {
+            int EntitlementID = (int)EGrid.DataKeys[(int)e.Item.ItemIndex];
+            EGrid.EditItemIndex = -1;
+            DeleteEntitlement(EntitlementID);
+            ResetFields();
+       
+        }
+        protected void EGrid_UpdateCommand(object source, DataGridCommandEventArgs e)
+        {
+
+        }
+
+        protected void LGrid_PageIndexChanged(object source, DataGridPageChangedEventArgs e)
+        {
+            LGrid.CurrentPageIndex = e.NewPageIndex;
+            LoadLeaveRequestList();
+        }
+       
+        protected void ALGrid_PageIndexChanged(object source, DataGridPageChangedEventArgs e)
+        {
+            ALGrid.CurrentPageIndex = e.NewPageIndex;
+            LoadLeaveRequestList();
+        }
+        protected void ALGrid_EditCommand(object source, DataGridCommandEventArgs e)
+        {
+            Tab3_keyField.Text = ALGrid.DataKeys[e.Item.ItemIndex].ToString();
+            Tab3_EmpName.Text = EmptyString(e.Item.Cells[0].Text);
+            Tab3_StartDate.Text = EmptyString(e.Item.Cells[1].Text);
+            Tab3_EndDate.Text = EmptyString(e.Item.Cells[2].Text);
+            if (EmptyString(e.Item.Cells[3].Text) != "")
+            {
+                Tab3_LeaveTypeList.SelectedValue = Tab3_LeaveTypeList.Items.FindByText(e.Item.Cells[3].Text).Value;
+            }
+
+            if (EmptyString(e.Item.Cells[4].Text) == "Paid") { Tab3_Rb1_PayType1.Checked = true; } else { Tab3_Rb1_PayType1.Checked = false; }
+            if (EmptyString(e.Item.Cells[4].Text) == "Unpaid") { Tab3_Rb1_PayType2.Checked = true; } else { Tab3_Rb1_PayType2.Checked = false; }
+
+            Tab3_Comments.Text = EmptyString(e.Item.Cells[6].Text);
+            Tab3_ApproverComments.Text = EmptyString(e.Item.Cells[7].Text);
+        }
+
+         protected void LGrid_EditCommand(object source, DataGridCommandEventArgs e)
+        {
+            Tab2_keyField.Text = LGrid.DataKeys[e.Item.ItemIndex].ToString();
+            String Status = EmptyString(e.Item.Cells[7].Text);
+            if (Status == "Approved")
+            {
+                Tab2_EmpName.Text = EmptyString(e.Item.Cells[0].Text);
+                Tab2_StartDate.Text = EmptyString(e.Item.Cells[1].Text);
+                Tab2_EndDate.Text = EmptyString(e.Item.Cells[2].Text);
+                if (EmptyString(e.Item.Cells[3].Text) != "")
+                {
+                    Tab2_LeaveTypeList.SelectedValue = Tab3_LeaveTypeList.Items.FindByText(e.Item.Cells[3].Text).Value;
+                }
+
+                if (EmptyString(e.Item.Cells[4].Text) == "Paid") { Tab2_Rb1_PayType1.Checked = true; } else { Tab2_Rb1_PayType1.Checked = false; }
+                if (EmptyString(e.Item.Cells[4].Text) == "Unpaid") { Tab2_Rb1_PayType2.Checked = true; } else { Tab2_Rb1_PayType2.Checked = false; }
+
+                Tab2_Comments.Text = EmptyString(e.Item.Cells[6].Text);
+                Tab2_ApprRB1.Checked = true;
+                Tab2_ApprRB2.Checked = false;
+                Tab2_ApprRB1.Enabled = false;
+                Tab2_ApprRB2.Enabled = false;
+
+
+            }
+            else
+            {
+                TableCell delete = (TableCell)e.Item.Controls[8];
+                delete.Enabled = false;
+                this.Tab2_Message2.Text = "This can not be deleted at this stage.";
+                this.Tab2_Message2.Visible = true;
+                this.Tab2_Message2.CssClass = "errorMessage";
+
+            }
+        }
+     
+    }
+}

@@ -1,0 +1,38 @@
+﻿
+.LoginTitle
+{
+    line-height:34px;
+    background: url("Images/login_title.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #FFF;
+    font-weight: bold;
+    font-size:15px;
+}
+
+
+.ContentArea
+{
+   background: url("../Images/body-shawdow.png") repeat-y scroll 0 0 rgba(0, 0, 0, 0);
+}
+.MainContent {
+    color: #416287;
+    float: left;
+    font-weight: bold;
+    line-height: 25px;
+    margin: 0 42px;
+    width: 480px;
+}
+
+.LoginArea {
+    background: rgba(0, 0, 0, 0) url("Images/seprater.png") no-repeat scroll right 0;
+    float: left;
+    font-weight: normal;
+    line-height: 30px;
+    width: 254px;
+}
+
+.loginto {
+    display: inline-block;
+    float: left;
+    height: 14px;
+    margin: 7px 40px;
+}

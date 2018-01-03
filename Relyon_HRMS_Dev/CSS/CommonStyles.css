@@ -1,0 +1,979 @@
+BODY
+{
+	Margin: 0px;
+	padding: 0px;
+	height: 100%;
+	color: navy;
+	font-family: Arial, Helvetica, Sans-Serif;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	margin-bottom:auto;	
+	
+}
+
+TABLE
+{
+	border-collapse:collapse;
+	
+	
+}
+RB
+{
+    border-style:none;
+}
+.primary
+{
+	font-size: 100%;
+}
+
+TD.reportSubTitle
+{
+	text-align: center;
+	color: navy;
+	text-transform: capitalize;
+	font-weight: bolder;
+	font-size: 100%;
+}
+
+TR.noBorder td {border: 0; }
+
+TR.menuBar
+{
+	background-color: navy;
+	vertical-align: middle;
+	color: white;
+	font-size: 8pt;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bolder;
+	line-height: 20px;
+	height: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+TR.menuBar IMG
+{
+	height: 15px;
+	width: 4px;
+	vertical-align: bottom;
+}
+TD.topmenu 
+{
+text-align: left;
+color: white;
+vertical-align: top;
+font-size: 8pt;
+font-family: Arial, Helvetica, Sans-Serif;
+}
+TD.Bottommenu
+{
+text-align: right;
+color: white;
+vertical-align: top;
+font-size: 8pt;
+font-family: Arial, Helvetica, Sans-Serif;
+font-style:normal;
+font-variant:normal;
+font-weight: bolder;
+line-height: 15px;
+	
+}	
+
+TD.CopyRight
+{
+text-align: right;
+color:white;
+vertical-align: top;
+font-size: 70%;
+font-family: Arial, Helvetica, Sans-Serif;
+font-style: normal;
+font-variant:normal;
+font-weight: bolder;
+line-height: 10px;
+
+	
+}	
+
+	
+
+TD.sidemenu
+{
+	text-align: left;
+	vertical-align: middle;
+	color: white;
+	font-size: 8pt;
+	font-style:normal;
+	font-variant: normal;
+	font-weight:bold;
+	line-height: 20px;
+	height: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 5px;
+	font-family: Arial, Helvetica, Sans-Serif;
+	}	
+
+
+
+
+INPUT
+{
+	color: navy;
+}
+A
+{
+	color: Maroon;
+	text-decoration:none;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size:12px;	
+}
+A:visited
+{
+	background-color: Transparent;
+	color:Red;
+	text-decoration: none;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+A:hover
+{
+	color: Blue;
+	text-decoration: underline;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+.payload
+{
+	padding: 4px;
+	padding-top: 10px;
+	text-align: center;
+}
+IMG.trans
+{
+	border: none;
+	height: 1px;
+	width: 1px;
+}
+.errorMessage
+{
+	text-align:center;
+	color: red;
+	font-weight: bolder;
+	font-size:10pt;
+	font-family:Arial, Helvetica, Sans-Serif;
+}
+.welcomeMessage
+{
+	color:navy;	
+	font-weight:bolder;
+	font-size:8pt;
+	font-family:Arial, Helvetica, Sans-Serif;
+}
+
+.TextBoxData
+{
+	color: navy;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 8pt; 
+	font-weight:bolder;
+	font-variant: normal;
+	
+}	
+.ddlist
+{
+	color:navy;	
+	font-weight:bolder;
+	font-size:8pt;
+	font-family:Arial, Helvetica, Sans-Serif;
+}
+
+TR.alt
+{
+	background-color: #F4F1FF;
+}
+.title
+{
+	color: black;
+	font-size: 105%;
+	font-weight: bolder;
+	text-align: center;
+}
+.shaded
+{
+	background-color: #F0F0F0;
+}
+.leftCell
+{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	text-align: right;
+}
+.rightCell
+{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+	text-align: right;
+}
+.middleCell
+{
+	border: 2px solid black;
+	text-align: right;
+}
+.singleCell
+{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	text-align: right;
+}
+.underline
+{
+	border-bottom: 1px solid black;
+}
+.line
+{
+	border-top: 2px solid black;
+	margin-top: 10px;
+	padding-top: 3px;
+}
+.lineBottom
+{
+	border-bottom: 2px solid black;
+	margin-bottom: 3px;
+	padding-bottom: 3px;
+}
+TD.reportTitle
+{
+	text-align: center;
+	width: 80%;
+	padding-bottom: 5px;
+	color: navy;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 105%;
+}
+TABLE.reportTitle
+{
+	margin-bottom: 15px;
+}
+TD.reportSubTitle
+{
+	text-align:left;
+	color: navy;
+	text-transform: capitalize;
+	font-weight: bolder;
+	font-size: 95%;
+}
+TD.reportDate
+{
+	color: navy;
+	width: 10%;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 90%;
+}
+TD.reportPage
+{
+	text-align: right;
+	width: 10%;
+	color: navy;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 90%;
+}
+.data
+{
+	text-align: right;
+	vertical-align: bottom;
+}
+.level1
+{
+	font-weight: bolder;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+TH.level1
+{
+	font-size: 90%;
+	text-align: left;
+}
+.level2
+{
+	padding-left: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+TH.level2
+{
+	font-weight: normal;
+	vertical-align: top;
+	text-align: left;
+}
+.level3
+{
+	padding-left: 60px;
+}
+TH.level3
+{
+	font-size: 90%;
+	font-weight: normal;
+	text-align: left;
+	vertical-align: top;
+}
+.level4
+{
+	padding-left: 90px;
+}
+.level5
+{
+	padding-left: 120px;
+}
+.level6
+{
+	padding-left: 150px;
+}
+.level7
+{
+	padding-left: 180px;
+}
+.level8
+{
+	padding-left: 210px;
+}
+TH.level8
+{
+	font-weight: normal;
+	font-size: 90%;
+	text-align: left;
+	vertical-align: top;
+}
+.attachment
+{
+	font-size: 60%;
+	text-align: right;
+}
+.right
+{
+
+	text-align: right;
+	padding-right: 5px;
+}
+TH.right
+{
+	font-size: 80%;
+	font-weight: normal;
+}
+TH.left
+{
+	font-weight: normal;
+	text-align: left;
+}
+TH.bold
+{
+	font-weight: bolder;
+}
+TH.top
+{
+	vertical-align: top;
+}
+.bold
+{
+	font-weight: bolder;
+}
+.textfield	{ font-family: Verdana, Arial;  font-size: 11px;  color: #333333;  text-transform: none;  font-style: normal;  text-decoration: none;  border: 1px solid #666666; 		/*#006EB1*/ }
+.mainheadtxt{ font-family: Verdana, Arial;  font-size: 11px;  font-style: normal;  text-transform: none;  color: #006EB1;  font-weight: bold;  text-decoration: none; }
+.mainheadtxt2{ font-family: Verdana, Arial;  font-size: 11px;  font-style: normal;  text-transform: none;  color: #006EB1;  font-weight: bolder;  text-decoration: none; }
+.mainheadtxt3{ font-family: Verdana, Arial;  font-size: 11px;  font-style: normal;  text-transform: none;  color: black;  font-weight: bolder;  text-decoration: none; }
+.mainheadtxt4{ font-family: Verdana, Arial;  font-size: 12px;  font-style: normal;  text-transform: none;  color: black;  font-weight: bold;  text-decoration: none; }
+.validationtxt{ font-family: Verdana, Arial;  font-size: 11px;  font-style: normal;  text-transform: none;  color:Red;  font-weight: bold;  text-decoration: none; }
+.validationtxt2{ font-family: Verdana, Arial;  font-size: 9px;  font-style: normal;  text-transform: none;  color:Red;  font-weight: bold;  text-decoration: none; }
+.button1
+{
+	background-color: #F4F1FF;
+	border: 1px solid navy;
+	margin: 2px;
+}
+.paystubfooter
+{
+		font-size: 60%;
+		font-style: normal;
+		font-weight: bolder;
+		font-variant: normal;
+		color: #006EB1;
+		line-height: 20px;
+		width: 5%;
+		
+}
+	
+.RedTheme
+{
+  background-color:Red;	
+  border: 1px solid navy;
+  margin: 2px;
+}	
+.NavyTheme
+{
+  background-color:Navy;	
+  border: 1px solid navy;
+  margin: 2px;
+}
+.GreenTheme
+{
+  background-color:Green;	
+  border: 1px solid navy;
+  margin: 2px;
+}
+.OrangeTheme
+{
+  background-color:DarkOrange;
+  border: 1px solid navy;
+  margin: 2px;
+}
+.GrayTheme
+{
+  background-color:DarkGray;
+  border: 1px solid navy;
+  margin: 2px;
+}
+
+TD.SubTitle
+{
+	color: White;
+	vertical-align:middle;
+	font-size: 9pt;
+	font-style:normal;
+	font-variant: normal;
+	font-weight:bolder;
+	font-family: Arial, Helvetica, Sans-Serif;
+	line-height: 10px;
+	text-align:center;
+}
+
+TR.Colheader 
+{ 
+	background-color:#3C4042;  
+	color:white;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-weight: normal; 
+	font-variant: normal;
+	font-weight: bolder;
+}
+TD.colheader
+{
+	background-color:#3C4042;
+	text-align: center;
+	color:white; 
+	vertical-align: top;
+	font-size: 13pt;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-style:normal;
+	font-variant: normal;
+	font-weight: bolder;
+	
+}
+
+Table.Partgrayblock 
+{ 
+	background-color:Whitesmoke;
+	border-bottom: #6699CC 1px solid; 
+	border-left: #6699CC 1px solid;
+	border-right: #6699CC 1px solid; 
+	border-top: #6699CC 1px solid; 
+	color: #000000;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-weight: normal; 
+	font-variant: normal;
+	font-weight: bold;
+}
+
+TR.PartWhite 
+{ 
+	background-color: #FFFFFF; 
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-weight: normal; 
+	font-variant: normal;
+	font-weight: bolder;
+}
+TD.PartWhite 
+{ 
+	text-align: left;
+	color: navy;
+	vertical-align: top;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 8pt; 
+	font-weight:bolder;
+	font-variant: normal;
+}	
+
+TR.PartBrown 
+{ 
+	background-color:lightgray;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-variant: normal;
+	font-weight: bolder;
+	font-size: 10pt;
+}
+TR.LoginHeader 
+{ 
+	background-color:Teal;
+	color:White;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-variant: normal;
+	font-weight: bolder;
+	font-size: 10pt;
+}
+TD.PartBrown 
+{ 
+	text-align: left;
+	color: navy;
+	vertical-align: top;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 8pt; 
+	font-variant: normal;
+	font-weight: bolder;
+}
+
+TR.PartBlack 
+{ 
+	background-color: white;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-weight: normal; 
+	font-variant: normal;
+	font-weight: bolder;
+}
+TD.PartBlack 
+{ 
+	text-align: left;
+	color: navy;
+	vertical-align: top;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 8pt; 
+	font-weight: normal; 
+	font-variant: normal;
+	font-weight: bolder;
+}
+.textsmall
+{
+	text-align: left;
+	color: navy;
+	vertical-align: top;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 85%; 
+	font-weight: normal; 
+	font-variant: normal;
+	font-weight:normal	
+}	
+
+.textheader
+{
+	text-align: left;
+	color: navy;
+	vertical-align: top;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 95%; 
+	font-weight: normal; 
+	font-variant: normal;
+	font-weight: bolder;	
+}	
+	
+
+.LabelAlignRight
+{
+  text-align:right;	
+  
+}	
+.RedTheme
+{
+  background-color:Red;	
+  border: 1px solid navy;
+  margin: 2px;
+}	
+.NavyTheme
+{
+  background-color:Navy;	
+  border: 1px solid navy;
+  margin: 2px;
+}
+.GreenTheme
+{
+  background-color:Green;	
+  border: 1px solid navy;
+  margin: 2px;
+}
+.OrangeTheme
+{
+  background-color:DarkOrange;
+  border: 1px solid navy;
+  margin: 2px;
+}
+.GrayTheme
+{
+  background-color:DarkGray;
+  border: 1px solid navy;
+  margin: 2px;
+}
+@media screen
+{
+	.forPrint
+	{
+		display: none;
+	}
+	.outline
+	{
+		border: 1px solid #DDDDDD;
+		padding: 10px;
+	}
+	.payload
+	{
+		width: 700px;
+		height: 100%;
+		
+	}
+	
+	TEXTAREA
+	{
+		border: 1px solid #999999;
+	}
+	.radioButton INPUT
+	{
+		border: none;
+	}
+	.checkbox INPUT
+	{
+		border: none;
+	}
+	.button1 
+{
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background-color:#79bbff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #2181e0;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #528ecc;
+}
+.button1:hover {
+	background-color:#378de5;
+}
+.button1:active {
+	position:relative;
+	top:1px;
+}
+/* This imageless css button was generated by CSSButtonGenerator.com */
+	
+	.button
+	{
+		background-color:#3C4042;	
+		color:White;
+		margin: 2px;
+		font-style:normal;
+		font-weight:bolder;
+		font-variant:normal;
+		vertical-align: middle;
+		font-family: Arial, Helvetica, Sans-Serif;
+		-moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border: 5px solid #009900;
+        padding : 5px;
+  
+				
+	}
+
+	.menu TD.menuBar
+	{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.menu TD.subMenuBar
+	{
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.mainMenu TD
+	{
+		padding-right: 5px;
+	}
+	.SubTitle
+	{
+		color: white;
+		font-size: 100%;
+		font-style: normal;
+		font-weight: bolder;
+		line-height: 40px;
+		padding-left: 100px;
+		text-align: right;
+		text-decoration: none;
+		vertical-align: middle;
+		width: 100%;
+		padding: 4px;
+	}
+
+	.appTitle
+	{
+		color: navy;
+		font-size: 200%;
+		font-style: normal;
+		font-weight: bolder;
+		line-height: 40px;
+		padding-left: 100px;
+		text-align: right;
+		text-decoration: none;
+		vertical-align: middle;
+		width: 100%;
+		padding: 4px;
+	}
+	.appTitle A
+	{
+		color: navy;
+	}
+	.appTitle A:visited
+	{
+		color: navy;
+	}
+	.appTitle A:hover
+	{
+		color: navy;
+		text-decoration: none;
+	}
+	.tagLine
+	{
+		color: white;
+		background-color:#330099;
+		font-size: 80%;
+		font-style:normal;
+		font-weight:bold;
+		font-variant:normal;
+		line-height: 5px;
+		width: 200px;
+		padding: 4px;
+		vertical-align: middle;
+		font-family: Arial, Helvetica, Sans-Serif;
+	}
+	TD.logo
+	{
+		vertical-align: middle;
+		height: 80px;
+		padding: 4px;
+		padding-right: 5px;
+		width: 80px;
+	}
+	IMG.logo
+	{
+		height: 80px;
+		width: 80px;
+	}
+	.centeredMenu
+	{
+		text-align: center;
+		width: 50%;
+	}
+	.subMenuBar
+	{
+		text-align: center;
+	}
+	.breadcrumb
+	{
+		color: navy;
+		font-size: 80%;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: bolder;
+		line-height: 20px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding-left: 10px;
+		padding-top: 4px;
+	}
+	.breadCrumb A
+	{
+		font-size: 80%;
+		color: navy;
+		font-weight: bolder;
+		text-decoration: none;
+	}
+	.breadCrumb A:visited
+	{
+		font-size: 80%;
+		color: purple;
+		font-weight: bolder;
+		text-decoration: none;
+	}
+	.breadCrumb A:hover
+	{
+		font-size: 80%;
+		color: blue;
+		font-weight: bolder;
+		text-decoration: underline;
+	}
+	.footer
+	{
+		font-size: 60%;
+		font-style: normal;
+		font-weight: bolder;
+		font-variant: normal;
+		color: navy;
+		line-height: 20px;
+		width: 5%;
+		border-top: 2px solid navy;
+	}
+	.paystubfooter
+	{
+		font-size: 60%;
+		font-style: normal;
+		font-weight: bolder;
+		font-variant: normal;
+		color: black;
+		line-height: 20px;
+		width: 5%;
+		
+	}
+	.helpLink
+	{
+		color: maroon;
+		font-size: 90%;
+		font-style: normal;
+		font-weight: bolder;
+		font-variant: normal;
+	}
+	.helpLink:visited
+	{
+		color: maroon;
+		font-size: 90%;
+		font-style: normal;
+		font-weight: bolder;
+		font-variant: normal;
+	}
+
+.Grid { border: solid 1px Tan; }
+.Grid td
+{
+    border: solid 3px #FFFFFF;
+    margin: 3px 3px 3px 3px;
+    font-family: Arial;
+    padding: 5px 5px 5px 5px;
+    text-align: left;
+}
+.GridHeader
+{
+    font-weight: bold;
+    background-color: Tan;
+    text-align: left;
+    font-size:80%;
+    font-family: Verdana, Arial; 
+    font-size: 11px; 
+    Text-transform: none; 
+    color: #006EB1; 
+    text-decoration: none; 
+    
+    
+    
+}
+.GridFooter
+{
+    font-weight: bold;
+    background-color: Tan;
+}
+.Grid a
+{
+    padding: 0px 15px 0px 15px;
+    font-weight:bold;
+    background-color: Tan;
+    text-align: left;
+    font-family: Verdana, Arial; 
+    font-size: 11px; 
+    Text-transform: none; 
+    color: #006EB1; 
+    text-decoration: none;
+}
+.Grid a:hover
+{
+    text-decoration: underline;
+    background: background-color: Tan;
+    text-align: left;
+    font-weight:bold;
+}
+
+
+.GridItem
+{
+    background-color:LightGoldenrodYellow;
+    font-size:75%;
+    font-weight:normal;
+}
+.GridLinkButton
+{
+    background-color: LightGoldenrodYellow;
+    font-size:75%;
+    font-weight:bold;
+}
+.GridAltItem
+{
+    background-color: PaleGoldenrod;
+    font-size:75%;
+    font-weight:normal;
+}
+.GridSelectedItem
+{
+    background-color: LightGoldenrodYellow;
+    font-size:75%;
+    font-weight:normal;
+    
+}
+.GridPagerItem
+{
+    background-color:"#FFCC66";
+    Color:"#333333";
+    font-size:75%;
+    
+}
+.EmptyGrid
+{
+   background-color:Olive
+  
+}
+.Grid Caption
+{
+text-align:Center;
+font-weight:bold;
+font-size:100%;
+padding: 2px; 
+background-color:Tan 
+
+}
+
+
+div#container {
+    height:250px;
+    background-color:Transparent
+    
+}
+div#scrollable_content {
+    height: 100%;
+    overflow:scroll;
+    overflow-y:auto;
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+.printable {
+border: 1px dotted #CCCCCC ;
+padding: 10px 10px 10px 10px ;
+}

@@ -1,0 +1,31 @@
+BODY
+{
+	background-color:maroon;
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	color: navy;
+	font-family: Arial, Helvetica, Sans-Serif;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	margin-bottom:auto;
+	
+}
+TR.SubTitle
+{
+	background-color:Navy;
+	text-align: left;
+	line-height: 10px;
+	
+}
+
+TR.colheader 
+{ 
+	background-color:black;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+
+
+
+	

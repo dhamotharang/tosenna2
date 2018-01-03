@@ -1,0 +1,76 @@
+
+Log written at : 1/11/2016 10:49:56 AM
+Error occured on page : http://localhost:22169/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/Admin/ManageEmpTA.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/11/2016 12:25:33 PM
+Error occured on page : http://localhost:22169/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/Logout.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/11/2016 12:25:42 PM
+Error occured on page : http://localhost:22169/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/11/2016 4:19:42 PM
+Error occured on page : http://localhost:10683/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/Admin/TAShiftMaster.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/11/2016 4:20:54 PM
+Error occured on page : http://localhost:10683/HRMSNet_V2/Admin/TAShiftMaster.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): A field or property with the name 'IsDefault' was not found on the selected data source.
+   at System.Web.UI.WebControls.BoundColumn.OnDataBindColumn(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.DataGrid.CreateItem(Int32 itemIndex, Int32 dataSourceIndex, ListItemType itemType, Boolean dataBind, Object dataItem, DataGridColumn[] columns, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.TAShiftMaster.LoadTAShiftMaster() in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\TAShiftMaster.aspx.cs:line 70
+   at SchoolNet.TAShiftMaster.LeaveType_Save_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\TAShiftMaster.aspx.cs:line 127
+==========================================

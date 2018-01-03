@@ -1,0 +1,169 @@
+
+Log written at : 1/6/2016 1:32:39 PM
+Error occured on page : http://localhost:56141/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/Admin/TAShiftMaster.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/6/2016 4:12:06 PM
+Error occured on page : http://localhost:8749/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/default.aspx?
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/6/2016 5:20:27 PM
+Error occured on page : http://localhost:8749/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/default.aspx?
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/6/2016 5:26:21 PM
+Error occured on page : http://localhost:8749/HRMSNet_V2/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'EContactID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\ManageEmployee.aspx.cs:line 1500
+==========================================
+
+Log written at : 1/6/2016 5:26:54 PM
+Error occured on page : http://localhost:8749/HRMSNet_V2/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'EContactID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\ManageEmployee.aspx.cs:line 1500
+==========================================
+
+Log written at : 1/6/2016 5:27:10 PM
+Error occured on page : http://localhost:8749/HRMSNet_V2/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'EContactID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\ManageEmployee.aspx.cs:line 1500
+==========================================
+
+Log written at : 1/6/2016 5:27:18 PM
+Error occured on page : http://localhost:8749/HRMSNet_V2/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'EContactID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\ManageEmployee.aspx.cs:line 1500
+==========================================
+
+Log written at : 1/6/2016 5:45:13 PM
+Error occured on page : http://localhost:8749/HRMSNet_V2/admin/TAShiftMaster.aspx
+
+Here is the actual error :
+System.FormatException: Failed to convert parameter value from a String to a TimeSpan. ---> System.FormatException: String was not recognized as a valid TimeSpan.
+   at System.Globalization.TimeSpanParse.ProcessTerminal_HM(TimeSpanRawInfo& raw, TimeSpanStandardStyles style, TimeSpanResult& result)
+   at System.Globalization.TimeSpanParse.ProcessTerminalState(TimeSpanRawInfo& raw, TimeSpanStandardStyles style, TimeSpanResult& result)
+   at System.Globalization.TimeSpanParse.TryParseTimeSpan(String input, TimeSpanStandardStyles style, IFormatProvider formatProvider, TimeSpanResult& result)
+   at System.Globalization.TimeSpanParse.Parse(String input, IFormatProvider formatProvider)
+   at System.TimeSpan.Parse(String s)
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   at System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.SetUpRPCParameters(_SqlRPC rpc, Int32 startCount, Boolean inSchema, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildRPC(Boolean inSchema, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DatabaseManager.Data.BaseDataAccessor.ExecuteWithResult(String sproc, SqlParameter[] parameters)
+   at DatabaseManager.Data.DBAccessManager.AddUpdateTAShiftMaster(Int32 RequestorID, Int32 ShiftID, Int32 DivisionID, Int32 LocationID, String ShiftName, String ShiftCode, String InTime, String OutTime, Boolean LateAllowed, Boolean EarlyAllowed, Boolean EndsNextDay, Boolean LunchAllowed, Int32 FixedLunchMins, Boolean BreakAllowed, Int32 FixedBreakMins, Int32 FullDayMins, Int32 HalfDayMins, Boolean OTAllowed, Int32 MaxOTMins)
+   at SchoolNet.TAShiftMaster.LeaveType_Save_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\TAShiftMaster.aspx.cs:line 106
+==========================================
+
+Log written at : 1/6/2016 7:09:33 PM
+Error occured on page : http://localhost:22169/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/default.aspx?
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/6/2016 7:10:43 PM
+Error occured on page : http://localhost:22169/HRMSNet_V2/admin/TAShiftMaster.aspx
+
+Here is the actual error :
+System.FormatException: Failed to convert parameter value from a String to a TimeSpan. ---> System.FormatException: String was not recognized as a valid TimeSpan.
+   at System.Globalization.TimeSpanParse.ProcessTerminal_HM(TimeSpanRawInfo& raw, TimeSpanStandardStyles style, TimeSpanResult& result)
+   at System.Globalization.TimeSpanParse.ProcessTerminalState(TimeSpanRawInfo& raw, TimeSpanStandardStyles style, TimeSpanResult& result)
+   at System.Globalization.TimeSpanParse.TryParseTimeSpan(String input, TimeSpanStandardStyles style, IFormatProvider formatProvider, TimeSpanResult& result)
+   at System.Globalization.TimeSpanParse.Parse(String input, IFormatProvider formatProvider)
+   at System.TimeSpan.Parse(String s)
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType, Boolean& coercedToDataFeed, Boolean& typeChanged, Boolean allowStreaming)
+   at System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.SetUpRPCParameters(_SqlRPC rpc, Int32 startCount, Boolean inSchema, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildRPC(Boolean inSchema, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DatabaseManager.Data.BaseDataAccessor.ExecuteWithResult(String sproc, SqlParameter[] parameters)
+   at DatabaseManager.Data.DBAccessManager.AddUpdateTAShiftMaster(Int32 RequestorID, Int32 ShiftID, Int32 DivisionID, Int32 LocationID, String ShiftName, String ShiftCode, String InTime, String OutTime, Boolean LateAllowed, Boolean EarlyAllowed, Boolean EndsNextDay, Boolean LunchAllowed, Int32 FixedLunchMins, Boolean BreakAllowed, Int32 FixedBreakMins, Int32 FullDayMins, Int32 HalfDayMins, Boolean OTAllowed, Int32 MaxOTMins)
+   at SchoolNet.TAShiftMaster.LeaveType_Save_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\TAShiftMaster.aspx.cs:line 106
+==========================================
+
+Log written at : 1/6/2016 7:20:43 PM
+Error occured on page : http://localhost:22169/HRMSNet_V2/admin/TAShiftMaster.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'LeaveTypeID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.TAShiftMaster.LoadTAShiftMaster() in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\TAShiftMaster.aspx.cs:line 71
+   at SchoolNet.TAShiftMaster.LeaveType_Save_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\TAShiftMaster.aspx.cs:line 127
+==========================================

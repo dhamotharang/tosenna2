@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Relyon_HRMS_Dev", ".", "{24D14FD9-DBA9-492C-85EA-AF2D314A9D72}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/SchoolNet"
+		Debug.AspNetCompiler.PhysicalPath = "..\Relyon_HRMS_Dev\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\SchoolNet\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/SchoolNet"
+		Release.AspNetCompiler.PhysicalPath = "..\Relyon_HRMS_Dev\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\SchoolNet\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56141"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Release|.NET = Release|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24D14FD9-DBA9-492C-85EA-AF2D314A9D72}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{24D14FD9-DBA9-492C-85EA-AF2D314A9D72}.Release|.NET.ActiveCfg = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

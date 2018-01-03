@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="PresentationManager.Web.UI.MasterPages">
+</Property><Property Name="Solution File" Value="C:\wwwroot\HRMSNet\PresentationManager.Web.UI.MasterPages\PresentationManager.Web.UI.MasterPages.sln">
+</Property><Property Name="Date" Value="Saturday, June 08, 2013">
+</Property><Property Name="Time" Value="12:16:54 PM">
+</Property></Properties><Event ErrorLevel="0" Project="PresentationManager.Web.UI.MasterPages" Source="PresentationManager.Web.UI.MasterPages.csproj" Description="Project file successfully backed up as C:\wwwroot\PresentationManager.Web.UI.MasterPages\Backup\PresentationManager.Web.UI.MasterPages.csproj">
+</Event><Event ErrorLevel="0" Project="PresentationManager.Web.UI.MasterPages" Source="PresentationManager.Web.UI.MasterPages.csproj.user" Description="Project user file successfully backed up as C:\wwwroot\PresentationManager.Web.UI.MasterPages\Backup\PresentationManager.Web.UI.MasterPages.csproj.user">
+</Event><Event ErrorLevel="0" Project="PresentationManager.Web.UI.MasterPages" Source="AssemblyInfo.cs" Description="File successfully backed up as C:\wwwroot\PresentationManager.Web.UI.MasterPages\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="PresentationManager.Web.UI.MasterPages" Source="CombinationType.cs" Description="File successfully backed up as C:\wwwroot\PresentationManager.Web.UI.MasterPages\Backup\CombinationType.cs">
+</Event><Event ErrorLevel="0" Project="PresentationManager.Web.UI.MasterPages" Source="Configuration.cs" Description="File successfully backed up as C:\wwwroot\PresentationManager.Web.UI.MasterPages\Backup\Configuration.cs">
+</Event><Event ErrorLevel="0" Project="PresentationManager.Web.UI.MasterPages" Source="ConfigurationHandler.cs" Description="File successfully backed up as C:\wwwroot\PresentationManager.Web.UI.MasterPages\Backup\ConfigurationHandler.cs">
+</Event><Event ErrorLevel="0" Project="PresentationManager.Web.UI.MasterPages" Source="Content.cs" Description="File successfully backed up as C:\wwwroot\PresentationManager.Web.UI.MasterPages\Backup\Content.cs">
+</Event><Event ErrorLevel="0" Project="PresentationManager.Web.UI.MasterPages" Source="ContentPlaceHolder.cs" Description="File successfully backed up as C:\wwwroot\PresentationManager.Web.UI.MasterPages\Backup\ContentPlaceHolder.cs">
+</Event><Event ErrorLevel="0" Project="PresentationManager.Web.UI.MasterPages" Source="MasterPage.cs" Description="File successfully backed up as C:\wwwroot\PresentationManager.Web.UI.MasterPages\Backup\MasterPage.cs">
+</Event><Event ErrorLevel="0" Project="PresentationManager.Web.UI.MasterPages" Source="Template.cs" Description="File successfully backed up as C:\wwwroot\PresentationManager.Web.UI.MasterPages\Backup\Template.cs">
+</Event><Event ErrorLevel="0" Project="PresentationManager.Web.UI.MasterPages" Source="PresentationManager.Web.UI.MasterPages.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="PresentationManager.Web.UI.MasterPages" Source="PresentationManager.Web.UI.MasterPages.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="PresentationManager.Web.UI.MasterPages" Source="PresentationManager.Web.UI.MasterPages.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

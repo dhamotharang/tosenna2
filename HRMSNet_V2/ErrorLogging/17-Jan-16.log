@@ -1,0 +1,330 @@
+
+Log written at : 1/17/2016 10:18:26 AM
+Error occured on page : http://localhost:12145/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/Common/ManualAttendance.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/17/2016 11:35:36 AM
+Error occured on page : http://localhost:12145/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/Common/ManualAttendance.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/17/2016 12:14:30 PM
+Error occured on page : http://localhost:12145/HRMSNet_V2/Common/ManualAttendance.aspx
+
+Here is the actual error :
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'spDeleteMAPunchRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DatabaseManager.Data.BaseDataAccessor.ExecuteWithResult(String sproc, SqlParameter[] parameters)
+   at DatabaseManager.Data.DBAccessManager.DeleteMAPunchRequest(Int32 MAPunchID, Int32 EmpId)
+   at SchoolNet.ManualAttendance.DeleteMAPunchRequest(Int32 MAPunchID) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ManualAttendance.aspx.cs:line 230
+ClientConnectionId:b726fb2f-e134-4469-b568-4c12c33978df
+Error Number:2812,State:62,Class:16
+==========================================
+
+Log written at : 1/17/2016 12:14:33 PM
+Error occured on page : http://localhost:12145/HRMSNet_V2/Common/ManualAttendance.aspx
+
+Here is the actual error :
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'spDeleteMAPunchRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DatabaseManager.Data.BaseDataAccessor.ExecuteWithResult(String sproc, SqlParameter[] parameters)
+   at DatabaseManager.Data.DBAccessManager.DeleteMAPunchRequest(Int32 MAPunchID, Int32 EmpId)
+   at SchoolNet.ManualAttendance.DeleteMAPunchRequest(Int32 MAPunchID) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ManualAttendance.aspx.cs:line 230
+ClientConnectionId:b726fb2f-e134-4469-b568-4c12c33978df
+Error Number:2812,State:62,Class:16
+==========================================
+
+Log written at : 1/17/2016 12:14:35 PM
+Error occured on page : http://localhost:12145/HRMSNet_V2/Common/ManualAttendance.aspx
+
+Here is the actual error :
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'spDeleteMAPunchRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DatabaseManager.Data.BaseDataAccessor.ExecuteWithResult(String sproc, SqlParameter[] parameters)
+   at DatabaseManager.Data.DBAccessManager.DeleteMAPunchRequest(Int32 MAPunchID, Int32 EmpId)
+   at SchoolNet.ManualAttendance.DeleteMAPunchRequest(Int32 MAPunchID) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ManualAttendance.aspx.cs:line 230
+ClientConnectionId:b726fb2f-e134-4469-b568-4c12c33978df
+Error Number:2812,State:62,Class:16
+==========================================
+
+Log written at : 1/17/2016 12:14:36 PM
+Error occured on page : http://localhost:12145/HRMSNet_V2/Common/ManualAttendance.aspx
+
+Here is the actual error :
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'spDeleteMAPunchRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DatabaseManager.Data.BaseDataAccessor.ExecuteWithResult(String sproc, SqlParameter[] parameters)
+   at DatabaseManager.Data.DBAccessManager.DeleteMAPunchRequest(Int32 MAPunchID, Int32 EmpId)
+   at SchoolNet.ManualAttendance.DeleteMAPunchRequest(Int32 MAPunchID) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ManualAttendance.aspx.cs:line 230
+ClientConnectionId:b726fb2f-e134-4469-b568-4c12c33978df
+Error Number:2812,State:62,Class:16
+==========================================
+
+Log written at : 1/17/2016 12:14:39 PM
+Error occured on page : http://localhost:12145/HRMSNet_V2/Common/ManualAttendance.aspx
+
+Here is the actual error :
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'spDeleteMAPunchRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DatabaseManager.Data.BaseDataAccessor.ExecuteWithResult(String sproc, SqlParameter[] parameters)
+   at DatabaseManager.Data.DBAccessManager.DeleteMAPunchRequest(Int32 MAPunchID, Int32 EmpId)
+   at SchoolNet.ManualAttendance.DeleteMAPunchRequest(Int32 MAPunchID) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ManualAttendance.aspx.cs:line 230
+ClientConnectionId:b726fb2f-e134-4469-b568-4c12c33978df
+Error Number:2812,State:62,Class:16
+==========================================
+
+Log written at : 1/17/2016 12:14:41 PM
+Error occured on page : http://localhost:12145/HRMSNet_V2/Common/ManualAttendance.aspx
+
+Here is the actual error :
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'spDeleteMAPunchRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DatabaseManager.Data.BaseDataAccessor.ExecuteWithResult(String sproc, SqlParameter[] parameters)
+   at DatabaseManager.Data.DBAccessManager.DeleteMAPunchRequest(Int32 MAPunchID, Int32 EmpId)
+   at SchoolNet.ManualAttendance.DeleteMAPunchRequest(Int32 MAPunchID) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ManualAttendance.aspx.cs:line 230
+ClientConnectionId:b726fb2f-e134-4469-b568-4c12c33978df
+Error Number:2812,State:62,Class:16
+==========================================
+
+Log written at : 1/17/2016 12:14:43 PM
+Error occured on page : http://localhost:12145/HRMSNet_V2/Common/ManualAttendance.aspx
+
+Here is the actual error :
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'spDeleteMAPunchRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DatabaseManager.Data.BaseDataAccessor.ExecuteWithResult(String sproc, SqlParameter[] parameters)
+   at DatabaseManager.Data.DBAccessManager.DeleteMAPunchRequest(Int32 MAPunchID, Int32 EmpId)
+   at SchoolNet.ManualAttendance.DeleteMAPunchRequest(Int32 MAPunchID) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ManualAttendance.aspx.cs:line 230
+ClientConnectionId:b726fb2f-e134-4469-b568-4c12c33978df
+Error Number:2812,State:62,Class:16
+==========================================
+
+Log written at : 1/17/2016 12:14:45 PM
+Error occured on page : http://localhost:12145/HRMSNet_V2/Common/ManualAttendance.aspx
+
+Here is the actual error :
+System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'spDeleteMAPunchRequest'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DatabaseManager.Data.BaseDataAccessor.ExecuteWithResult(String sproc, SqlParameter[] parameters)
+   at DatabaseManager.Data.DBAccessManager.DeleteMAPunchRequest(Int32 MAPunchID, Int32 EmpId)
+   at SchoolNet.ManualAttendance.DeleteMAPunchRequest(Int32 MAPunchID) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ManualAttendance.aspx.cs:line 230
+ClientConnectionId:b726fb2f-e134-4469-b568-4c12c33978df
+Error Number:2812,State:62,Class:16
+==========================================
+
+Log written at : 1/17/2016 1:50:06 PM
+Error occured on page : http://localhost:12145/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/17/2016 1:51:04 PM
+Error occured on page : http://localhost:12145/HRMSNet_V2/Common/LeaveRequest.aspx
+
+Here is the actual error :
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: The remote name could not be resolved: 'smtpout21.emea.aon.bz'
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SchoolNet.LeaveRequest.NotifyApproversViaEmail(String EmpName, String EmpEmail, String LeaveStartDate, String LeaveEndDate, String LeaveType, String LineManagerName, String LineManagerEmail, String DeptHeadName, String DeptHeadEmail, String HRAdminName, String HRAdminEmail) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\LeaveRequest.aspx.cs:line 204
+==========================================
+
+Log written at : 1/17/2016 1:54:20 PM
+Error occured on page : http://localhost:12145/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/Common/ViewHolidays.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/17/2016 1:57:31 PM
+Error occured on page : http://localhost:12145/HRMSNet_V2/Supervisor/PendingLeaveRequests.aspx
+
+Here is the actual error :
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: The remote name could not be resolved: 'smtpout21.emea.aon.bz'
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SchoolNet.PendingLeaveRequests.LeaveRequestApproval_Notification(String EmpName, String EmpEmail, String LeaveStartDate, String LeaveEndDate, String LeaveType, String StatusName, String LineManagerName, String LineManagerEmail) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Supervisor\PendingLeaveRequests.aspx.cs:line 187
+==========================================
+
+Log written at : 1/17/2016 1:58:23 PM
+Error occured on page : http://localhost:12145/HRMSNet_V2/Common/ManageRequests.aspx
+
+Here is the actual error :
+System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.WebException: The remote name could not be resolved: 'smtpout21.emea.aon.bz'
+   at System.Net.ServicePoint.GetConnection(PooledStream PooledStream, Object owner, Boolean async, IPAddress& address, Socket& abortSocket, Socket& abortSocket6)
+   at System.Net.PooledStream.Activate(Object owningObject, Boolean async, GeneralAsyncDelegate asyncCallback)
+   at System.Net.PooledStream.Activate(Object owningObject, GeneralAsyncDelegate asyncCallback)
+   at System.Net.ConnectionPool.GetConnection(Object owningObject, GeneralAsyncDelegate asyncCallback, Int32 creationTimeout)
+   at System.Net.Mail.SmtpConnection.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpTransport.GetConnection(ServicePoint servicePoint)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at SchoolNet.ManageRequests.EmailNotification_Requests(String HRAdminName, String HRAdminEmail, String LineManagerName, String LineManagerEmail, String FinanceHeadName, String FinanceHeadEmail, String DeptHeadName, String DeptHeadEmail, String ITHeadName, String ITHeadEmail, String EmpName, String EmpEmail, String RequestTypeName, String NewHireName, String NewHireDate, String NewHireDivision, String NewHireDept, String NewHireLocation, String Note, String StatusName) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ManageRequests.aspx.cs:line 277
+==========================================
+
+Log written at : 1/17/2016 2:18:58 PM
+Error occured on page : http://localhost:12145/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/17/2016 3:46:50 PM
+Error occured on page : http://localhost:12145/HRMSNet_V2/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'EContactID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\ManageEmployee.aspx.cs:line 1500
+==========================================
+
+Log written at : 1/17/2016 3:47:03 PM
+Error occured on page : http://localhost:12145/HRMSNet_V2/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Web.HttpException (0x80004005): DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'EContactID'.
+   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.WebControls.DataGrid.CreateControlHierarchy(Boolean useDataSource)
+   at System.Web.UI.WebControls.BaseDataList.OnDataBinding(EventArgs e)
+   at System.Web.UI.WebControls.BaseDataList.DataBind()
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Admin\ManageEmployee.aspx.cs:line 1500
+==========================================
+
+Log written at : 1/17/2016 6:03:13 PM
+Error occured on page : http://localhost:12145/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/Logout.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================

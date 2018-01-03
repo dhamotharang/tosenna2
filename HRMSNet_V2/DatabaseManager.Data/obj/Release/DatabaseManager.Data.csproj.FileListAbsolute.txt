@@ -1,0 +1,6 @@
+C:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\DatabaseManager.Data\bin\Release\DatabaseManager.Data.dll
+C:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\DatabaseManager.Data\obj\Release\DatabaseManager.Data.dll
+C:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\DatabaseManager.Data\obj\Release\DatabaseManager.Data.csprojResolveAssemblyReference.cache
+C:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\DatabaseManager.Data\bin\Release\DatabaseManager.Data.dll
+C:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\DatabaseManager.Data\obj\Release\DatabaseManager.Data.csprojResolveAssemblyReference.cache
+C:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\DatabaseManager.Data\obj\Release\DatabaseManager.Data.dll

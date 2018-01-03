@@ -1,0 +1,73 @@
+
+Log written at : 7/22/2015 10:56:39 AM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx?ReturnUrl=/HRMSNet_Dev/default.aspx?
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/22/2015 2:48:55 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/login.aspx?ReturnUrl=/HRMSNet_Dev/default.aspx?
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 7/22/2015 2:55:15 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/UserAccounts.aspx
+
+Here is the actual error :
+System.InvalidCastException: Unable to cast object of type 'System.DBNull' to type 'System.String'.
+   at DatabaseManager.Data.BaseDataAccessor.ExecuteWithResult(String sproc, SqlParameter[] parameters)
+   at DatabaseManager.Data.DBAccessManager.DeleteUserAccount(Int32 EmpId)
+   at SchoolNet.UserAccounts.DeleteUserAccount(Int32 Emp_Id) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\UserAccounts.aspx.cs:line 389
+==========================================
+
+Log written at : 7/22/2015 3:00:23 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmpResources.aspx
+
+Here is the actual error :
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\inetpub\wwwroot\ARKHRMS\DocResources\Travel Advisory.docx'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.InternalDelete(String path, Boolean checkHost)
+   at System.IO.File.Delete(String path)
+   at SchoolNet.ManageEmpResources.DeleteDocument(Int32 DocumentID) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmpResources.aspx.cs:line 140
+==========================================
+
+Log written at : 7/22/2015 3:39:03 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/Division.aspx
+
+Here is the actual error :
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SchoolNet.Division.DGrid_EditCommand(Object source, DataGridCommandEventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\Division.aspx.cs:line 552
+==========================================
+
+Log written at : 7/22/2015 3:39:05 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/Division.aspx
+
+Here is the actual error :
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SchoolNet.Division.DGrid_EditCommand(Object source, DataGridCommandEventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\Division.aspx.cs:line 552
+==========================================
+
+Log written at : 7/22/2015 3:39:40 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/Division.aspx
+
+Here is the actual error :
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at SchoolNet.Division.DGrid_EditCommand(Object source, DataGridCommandEventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\Division.aspx.cs:line 552
+==========================================

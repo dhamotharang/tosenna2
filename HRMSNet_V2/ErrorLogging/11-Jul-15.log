@@ -1,0 +1,158 @@
+
+Log written at : 7/11/2015 5:32:26 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Data.SqlClient.SqlException (0x80131904): Column name or number of supplied values does not match table definition.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at DatabaseManager.Data.BaseDataAccessor.ExecuteWithResult(String sproc, SqlParameter[] parameters)
+   at DatabaseManager.Data.DBAccessManager.Update_Emp_DependentInfo(Int32 EmpId, String Name, Int32 RelationshipID, String DOB, Int32 GenderTypeID, String PassportNo, Int32 PPCountryID, String PassportIssueDate, String PassportExpDate, String VisaNumber, Int32 VisaTypeID, String VisaIssueDate, String VisaExpiryDate, Int32 Visa_IssueCountryID)
+   at SchoolNet.ManageEmployee.DP_Save_Click(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 737
+ClientConnectionId:1c72e6cf-903f-4552-9c48-a42a77515f7e
+==========================================
+
+Log written at : 7/11/2015 6:05:39 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1469
+==========================================
+
+Log written at : 7/11/2015 6:21:09 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1469
+==========================================
+
+Log written at : 7/11/2015 6:21:19 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1469
+==========================================
+
+Log written at : 7/11/2015 6:21:29 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1469
+==========================================
+
+Log written at : 7/11/2015 6:26:12 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1469
+==========================================
+
+Log written at : 7/11/2015 6:31:05 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1469
+==========================================
+
+Log written at : 7/11/2015 6:33:35 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1469
+==========================================
+
+Log written at : 7/11/2015 6:35:39 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Data.SqlClient.SqlException (0x80131904): The statement terminated. The maximum recursion 100 has been exhausted before statement completion.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at DatabaseManager.Data.BaseDataAccessor.ExecuteDataSet(String sproc, SqlParameter[] parameters)
+   at DatabaseManager.Data.DBAccessManager.RetrieveMyOrgRootMember(Int32 EmpId)
+   at SchoolNet.ManageEmployee.LoadRootLevelMembers() in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 592
+ClientConnectionId:34feb72f-7ddd-4654-a0e0-0a6ad505322e
+==========================================
+
+Log written at : 7/11/2015 6:37:46 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.Data.SqlClient.SqlException (0x80131904): The statement terminated. The maximum recursion 100 has been exhausted before statement completion.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at DatabaseManager.Data.BaseDataAccessor.ExecuteDataSet(String sproc, SqlParameter[] parameters)
+   at DatabaseManager.Data.DBAccessManager.RetrieveMyOrgRootMember(Int32 EmpId)
+   at SchoolNet.ManageEmployee.LoadRootLevelMembers() in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 592
+ClientConnectionId:34feb72f-7ddd-4654-a0e0-0a6ad505322e
+==========================================
+
+Log written at : 7/11/2015 6:37:53 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1469
+==========================================
+
+Log written at : 7/11/2015 6:39:21 PM
+Error occured on page : http://localhost:56141/HRMSNet_Dev/admin/ManageEmployee.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: There is no row at position 0.
+   at System.Data.RBTree`1.GetNodeByIndex(Int32 userIndex)
+   at System.Data.DataRowCollection.get_Item(Int32 index)
+   at SchoolNet.ManageEmployee.LoadEmployeeInformation(Int32 EmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_Dev\Admin\ManageEmployee.aspx.cs:line 1469
+==========================================

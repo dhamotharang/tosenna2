@@ -1,0 +1,54 @@
+
+Log written at : 4/6/2016 12:52:40 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/default.aspx?
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 4/6/2016 1:27:05 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 4/6/2016 1:31:56 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/Payroll/ProcessMonthlyPayroll.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at SchoolNet.ProcessMonthlyPayroll.ExportToExcel(DataTable dt) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Payroll\ProcessMonthlyPayroll.aspx.cs:line 175
+   at SchoolNet.ProcessMonthlyPayroll.RunEmployeeMonthlyPayroll(String Pay_MonthYear, Int32 DivisionID, Int32 DivisionLocationID, Int32 RequestingEmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Payroll\ProcessMonthlyPayroll.aspx.cs:line 82
+==========================================
+
+Log written at : 4/6/2016 1:34:30 PM
+Error occured on page : http://localhost:1463/HRMSNet_V2/Payroll/RunMonthlyPayroll.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at SchoolNet.RunMonthlyPayroll.ExportToExcel(DataTable dt) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Payroll\RunMonthlyPayroll.aspx.cs:line 161
+   at SchoolNet.RunMonthlyPayroll.RunEmployeeMonthlyPayroll(String Pay_MonthYear, Int32 DivisionID, Int32 DivisionLocationID, Int32 RequestingEmpId) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Payroll\RunMonthlyPayroll.aspx.cs:line 70
+==========================================

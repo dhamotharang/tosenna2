@@ -1,0 +1,532 @@
+
+Log written at : 1/21/2016 10:18:33 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/default.aspx?
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/21/2016 10:20:08 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 69
+==========================================
+
+Log written at : 1/21/2016 10:34:57 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 70
+==========================================
+
+Log written at : 1/21/2016 10:35:03 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 70
+==========================================
+
+Log written at : 1/21/2016 10:35:07 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 70
+==========================================
+
+Log written at : 1/21/2016 10:35:24 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 70
+==========================================
+
+Log written at : 1/21/2016 10:35:33 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 69
+==========================================
+
+Log written at : 1/21/2016 10:42:58 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 69
+==========================================
+
+Log written at : 1/21/2016 10:44:13 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 68
+==========================================
+
+Log written at : 1/21/2016 10:44:16 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 68
+==========================================
+
+Log written at : 1/21/2016 10:44:28 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 68
+==========================================
+
+Log written at : 1/21/2016 10:44:58 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 68
+==========================================
+
+Log written at : 1/21/2016 10:45:17 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 68
+==========================================
+
+Log written at : 1/21/2016 10:45:34 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 68
+==========================================
+
+Log written at : 1/21/2016 10:46:36 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 68
+==========================================
+
+Log written at : 1/21/2016 10:46:54 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 68
+==========================================
+
+Log written at : 1/21/2016 10:47:45 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 68
+==========================================
+
+Log written at : 1/21/2016 10:48:58 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 68
+==========================================
+
+Log written at : 1/21/2016 10:49:02 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 68
+==========================================
+
+Log written at : 1/21/2016 10:49:09 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 68
+==========================================
+
+Log written at : 1/21/2016 11:00:13 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 74
+==========================================
+
+Log written at : 1/21/2016 11:00:13 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 74
+==========================================
+
+Log written at : 1/21/2016 11:00:16 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 74
+==========================================
+
+Log written at : 1/21/2016 11:00:16 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 74
+==========================================
+
+Log written at : 1/21/2016 11:00:18 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 74
+==========================================
+
+Log written at : 1/21/2016 11:00:18 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 74
+==========================================
+
+Log written at : 1/21/2016 11:06:52 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 74
+==========================================
+
+Log written at : 1/21/2016 11:06:52 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 74
+==========================================
+
+Log written at : 1/21/2016 11:06:54 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 74
+==========================================
+
+Log written at : 1/21/2016 11:06:54 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 74
+==========================================
+
+Log written at : 1/21/2016 11:06:56 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 74
+==========================================
+
+Log written at : 1/21/2016 11:06:56 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 74
+==========================================
+
+Log written at : 1/21/2016 11:11:01 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 76
+==========================================
+
+Log written at : 1/21/2016 11:11:03 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 76
+==========================================
+
+Log written at : 1/21/2016 11:11:50 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 76
+==========================================
+
+Log written at : 1/21/2016 11:12:38 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 76
+==========================================
+
+Log written at : 1/21/2016 11:12:41 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 76
+==========================================
+
+Log written at : 1/21/2016 11:13:14 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 77
+==========================================
+
+Log written at : 1/21/2016 11:13:29 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 77
+==========================================
+
+Log written at : 1/21/2016 11:13:31 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 77
+==========================================
+
+Log written at : 1/21/2016 11:13:33 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 77
+==========================================
+
+Log written at : 1/21/2016 11:14:36 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 73
+==========================================
+
+Log written at : 1/21/2016 11:15:33 AM
+Error occured on page : http://localhost:8210/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.IndexOutOfRangeException: Cannot find table 0.
+   at System.Data.DataTableCollection.get_Item(Int32 index)
+   at SchoolNet.ViewAttendance.LoadEmpMonthlyAttendance(Int32 EmpId, String MonthYear) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Common\ViewAttendance.aspx.cs:line 74
+==========================================
+
+Log written at : 1/21/2016 1:14:38 PM
+Error occured on page : http://localhost:8210/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/21/2016 1:33:56 PM
+Error occured on page : http://localhost:8210/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/Common/ManualAttendance.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/21/2016 3:44:00 PM
+Error occured on page : http://localhost:8210/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/Logout.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/21/2016 3:44:07 PM
+Error occured on page : http://localhost:8210/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/21/2016 4:01:14 PM
+Error occured on page : http://localhost:8210/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/21/2016 4:01:38 PM
+Error occured on page : http://localhost:8210/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/21/2016 4:03:42 PM
+Error occured on page : http://localhost:8210/HRMSNet_V2/login.aspx?ReturnUrl=/HRMSNet_V2/Common/ViewAttendance.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/21/2016 5:28:12 PM
+Error occured on page : http://localhost:8210/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/21/2016 6:28:26 PM
+Error occured on page : http://localhost:8210/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
+
+Log written at : 1/21/2016 7:04:41 PM
+Error occured on page : http://localhost:8210/HRMSNet_V2/login.aspx
+
+Here is the actual error :
+System.Threading.ThreadAbortException: Thread was being aborted.
+   at System.Threading.Thread.AbortInternal()
+   at System.Threading.Thread.Abort(Object stateInfo)
+   at System.Web.HttpResponse.AbortCurrentThread()
+   at System.Web.HttpResponse.End()
+   at System.Web.HttpResponse.Redirect(String url, Boolean endResponse, Boolean permanent)
+   at System.Web.HttpResponse.Redirect(String url)
+   at SchoolNet.Login.MemberLogin(Object sender, EventArgs e) in c:\Kesavan\Projects\ARK HRMS\HRMSNet_V2\Login.aspx.cs:line 268
+==========================================
